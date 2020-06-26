@@ -1,0 +1,317 @@
+/*
+
+    Font Properties
+
+*/
+/*
+
+
+    Font Sizes Params (fontsize, lineheight)
+
+
+*/
+/*
+
+    Font Colors
+
+*/
+/*
+
+  Background Color
+
+*/
+/*
+
+  Highlight Color
+
+*/
+/*
+    button properties
+*/
+/*
+
+    button color
+    
+*/
+/*
+
+
+    setting margin: 0 auto;
+
+*/
+/*
+
+
+    setting fontsize
+
+*/
+/*
+
+
+    setting lineheight property - call in set-font-size()
+
+*/
+/*
+
+    setting margin-bottom
+
+*/
+/*
+
+    setting margin-top
+
+*/
+/*
+
+    setting padding
+
+*/
+/*
+
+    Font Properties
+
+*/
+/*
+
+
+    Font Sizes Params (fontsize, lineheight)
+
+
+*/
+/* ====================
+
+    NAVIGATION
+
+======================*/
+.desktop-nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 150px;
+  width: 100%;
+  z-index: 99; }
+  .desktop-nav-wrapper .links {
+    display: flex;
+    justify-content: space-around; }
+    .desktop-nav-wrapper .links .logo {
+      margin: 0 24px; }
+      .desktop-nav-wrapper .links .logo .logo-img {
+        width: 130px;
+        height: 130px;
+        background: url("../img/main-logo.png") center center/cover no-repeat; }
+    .desktop-nav-wrapper .links ul {
+      display: flex;
+      align-items: center; }
+      .desktop-nav-wrapper .links ul li {
+        padding: 0 16px;
+        position: relative; }
+        .desktop-nav-wrapper .links ul li:hover > ul {
+          display: block; }
+        .desktop-nav-wrapper .links ul li ul {
+          display: none;
+          position: absolute;
+          padding-top: 30px; }
+          .desktop-nav-wrapper .links ul li ul::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: -8px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 0 16px;
+            z-index: -1; }
+          .desktop-nav-wrapper .links ul li ul li {
+            margin-bottom: 16px; }
+  .desktop-nav-wrapper .contact {
+    border-radius: 30px;
+    margin: 0 24px;
+    color: #030406;
+    border: 6px solid #ff7a07;
+    background: #ff7a07;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    color: #030406;
+    font-weight: 700;
+    padding: 0 14px;
+    white-space: nowrap; }
+
+#hamburger {
+  top: 0px;
+  right: 0;
+  position: fixed;
+  display: none; }
+
+.mobile-nav-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 100%;
+  background: rgba(3, 4, 6, 0.9);
+  padding: 32px;
+  z-index: 99;
+  display: none; }
+  @media screen and (min-width: 500px) {
+    .mobile-nav-wrapper {
+      padding: 32px; } }
+  @media screen and (min-width: 768px) {
+    .mobile-nav-wrapper {
+      padding: 48px; } }
+  @media screen and (min-width: 1024px) {
+    .mobile-nav-wrapper {
+      padding: 48px; } }
+  .mobile-nav-wrapper .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute; }
+    .mobile-nav-wrapper .links::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: -1; }
+    .mobile-nav-wrapper .links ul li {
+      margin-bottom: 14px; }
+      @media screen and (min-width: 500px) {
+        .mobile-nav-wrapper .links ul li {
+          margin-bottom: 32px; } }
+      @media screen and (min-width: 768px) {
+        .mobile-nav-wrapper .links ul li {
+          margin-bottom: 32px; } }
+      @media screen and (min-width: 1024px) {
+        .mobile-nav-wrapper .links ul li {
+          margin-bottom: 32px; } }
+      .mobile-nav-wrapper .links ul li a {
+        font-family: "Lato", sans-serif;
+        color: #fdfdfd;
+        text-transform: uppercase;
+        width: 100%;
+        font-size: 18px; }
+        @media screen and (min-width: 500px) {
+          .mobile-nav-wrapper .links ul li a {
+            font-size: 32px; } }
+        @media screen and (min-width: 768px) {
+          .mobile-nav-wrapper .links ul li a {
+            font-size: 32px; } }
+        @media screen and (min-width: 1024px) {
+          .mobile-nav-wrapper .links ul li a {
+            font-size: 32px; } }
+        .mobile-nav-wrapper .links ul li a i {
+          margin-right: 16px;
+          color: #fe8600; }
+      .mobile-nav-wrapper .links ul li ul {
+        margin: 48px; }
+        .mobile-nav-wrapper .links ul li ul li a {
+          font-size: 14px; }
+          @media screen and (min-width: 500px) {
+            .mobile-nav-wrapper .links ul li ul li a {
+              font-size: 24px; } }
+          @media screen and (min-width: 768px) {
+            .mobile-nav-wrapper .links ul li ul li a {
+              font-size: 24px; } }
+          @media screen and (min-width: 1024px) {
+            .mobile-nav-wrapper .links ul li ul li a {
+              font-size: 24px; } }
+    .mobile-nav-wrapper .links ul .contact {
+      margin-top: 48px; }
+      .mobile-nav-wrapper .links ul .contact p {
+        font-family: "Lato", sans-serif;
+        font-weight: 300;
+        color: #fdfdfd;
+        text-transform: uppercase;
+        line-height: 1.5;
+        font-size: 14px; }
+        @media screen and (min-width: 500px) {
+          .mobile-nav-wrapper .links ul .contact p {
+            font-size: 24px; } }
+        @media screen and (min-width: 768px) {
+          .mobile-nav-wrapper .links ul .contact p {
+            font-size: 24px; } }
+        @media screen and (min-width: 1024px) {
+          .mobile-nav-wrapper .links ul .contact p {
+            font-size: 24px; } }
+        .mobile-nav-wrapper .links ul .contact p span {
+          white-space: nowrap;
+          font-size: 24px;
+          position: relative; }
+          @media screen and (min-width: 500px) {
+            .mobile-nav-wrapper .links ul .contact p span {
+              font-size: 36px; } }
+          @media screen and (min-width: 768px) {
+            .mobile-nav-wrapper .links ul .contact p span {
+              font-size: 36px; } }
+          @media screen and (min-width: 1024px) {
+            .mobile-nav-wrapper .links ul .contact p span {
+              font-size: 36px; } }
+          .mobile-nav-wrapper .links ul .contact p span::before {
+            content: "";
+            position: absolute;
+            background: #ff7a07;
+            width: 100%;
+            height: 6px;
+            top: 77%;
+            left: 0;
+            z-index: -1; }
+
+/* Smartphones */
+@media only screen and (max-width: 500px) {
+  .desktop-nav-wrapper {
+    display: none; }
+  .mobile-nav-wrapper,
+  #hamburger {
+    display: flex; }
+  .mobile-nav-wrapper .logo .logo-img {
+    width: 170px;
+    height: 170px; }
+  .mobile-nav-wrapper .links ul li ul {
+    margin: 32px; } }
+
+/* Tablet */
+@media (min-width: 501px) and (max-width: 768px) {
+  .desktop-nav-wrapper {
+    display: none; }
+  .mobile-nav-wrapper,
+  #hamburger {
+    display: flex; }
+  .mobile-nav-wrapper .contact {
+    margin-top: 90px; } }
+
+/* Landscape */
+@media (max-height: 500px) {
+  .desktop-nav-wrapper {
+    display: none; }
+  .mobile-nav-wrapper,
+  #hamburger {
+    display: flex; }
+  .mobile-nav-wrapper .links {
+    width: 100%; }
+    .mobile-nav-wrapper .links ul {
+      margin: 16px; }
+      .mobile-nav-wrapper .links ul li {
+        margin-bottom: 14px; }
+        .mobile-nav-wrapper .links ul li a {
+          font-size: 16px; }
+        .mobile-nav-wrapper .links ul li ul {
+          display: flex;
+          margin: 14px; }
+          .mobile-nav-wrapper .links ul li ul li {
+            margin-right: 16px;
+            margin-bottom: 14px; }
+            .mobile-nav-wrapper .links ul li ul li a {
+              font-size: 16px; }
+      .mobile-nav-wrapper .links ul .contact {
+        margin-top: 32px; }
+        .mobile-nav-wrapper .links ul .contact p {
+          font-size: 14px; }
+          .mobile-nav-wrapper .links ul .contact p span {
+            font-size: 20px; } }
