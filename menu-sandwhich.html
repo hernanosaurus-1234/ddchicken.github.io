@@ -10,11 +10,12 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/navigation.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/menu-sandwhich.css">
     <title>DD Chicken | Roast Chicken & More</title>
 </head>
 <body>
-
+    
+    <!-- Desktop Navigation -->
     <div class="navigation" id="desktop-nav">
 
         <a href="index.html" class="logo">
@@ -52,6 +53,7 @@
     </div>
 
 
+     <!-- Mobile Navigation -->
     <div class="navigation" id="mobile-nav">
 
         <div class="nav-items-wrapper">
@@ -90,7 +92,7 @@
         
     </div>
 
-    
+     <!-- Mobile Hamburger Menu -->
     <div id='hamburger'>
         <div class='hamburger hamburger--spin'>
              
@@ -101,85 +103,52 @@
     </div>
    
 
-    <main class="main-content" id="homepage">
+    <main class="main-content">
 
-        <div id="hero-img"></div>
-
-        <!-- HERO SECTION -->
-        <section id="hero">
+        <!-- SANDWHICH SECTION -->
+        <section class="product-section" id="sandwhich">
 
             <div class="center-wrapper">
-                <h1 class="page-title">DD CHICKEN <br>DELIVERY</h1>
-                <a href="#" class="hero-cta"><span>view our menu</span><i class="fas fa-chevron-right"></i></a>
-            </div>
-
-        </section>
-
-        <!-- FACEBOOK SECTION -->
-        <section id="facebook">
-
-            <div class="center-wrapper">
-                <div class="title-wrapper">
-                    <a href="#" class="section-title title-animation facebook-cta">
-                        Follow us <span>Facebook <i class="fab fa-facebook-square"></i></span>
-                    </a>
-                </div>
-
-                <div class="detail-wrapper">
-                    <p class="section-detail"><a href="#" class="call-to-action underline-animation">Order Now</a> or Get to  know more about our newest menu items and latest offers.</p>
-                </div>
-            </div>
-            
-        </section>
-
-        <!-- CALLOUTS SECTION -->
-        <section id="callouts">
-            
-            <div class="section" id="delivery-location">
-                <div class="center-wrapper">
-                    <h2 class="section-title">Delivery <span>Locations <i class="fas fa-search-location"></i></span></h2>
-                    <p class="section-detail">Ready to be delivered right at your doorstep.</p>
-                </div>
-
-                <div class="cta-wrapper">
-                    <a href="#" class="call-to-action underline-animation" id="we-deliver-cta">WE DELIVER<i class="fas fa-chevron-right"></i></a>
-                </div>
-            </div>
-           
-            <div class="section" id="sign-up">
-                <div class="center-wrapper">
-                    <h2 class="section-title">Oh yes it's free</h2>
-                    <p class="section-detail">Sign-up and get the chance to be the first one to taste any new meal fresh from the grill.</p>
-                </div>
-                <div class="cta-wrapper">
-                    <a href="#" class="call-to-action underline-animation" id="sign-up-cta">SIGN UP NOW<i class="fas fa-chevron-right"></i></a>
-                </div>
                 
+                <div class="title-wrapper">
+                    <h2 class="page-title">Chicken Sandwhich</h2>
+                    <p class="page-detail">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque quasi aut.</p>
+                </div>
+
+                <div class="product-grid">
+
+                    <div class="product-item">
+                        <div class="product-image" id="product-image-1"></div>
+                        <h3 class="product-title"><span>NEW RECIPE</span>Barbecue Chicken</h3>
+                        <p class="product-detail">Shredded chicken in baguette topped with onions, greens and our homemade spicy BBQ sauce. Served with pickles and potato chips.</p>
+                        <div class="product-price">
+                            <div class="price">7,000 KS</div>
+                        </div>
+                    </div>
+
+                    <div class="product-item">
+                        <div class="product-image" id="product-image-2"></div>
+                        <h3 class="product-title">Garlic Spicy Aioli </h3>
+                        <p class="product-detail">Shredded chicken in baguette topped with grilled peppers, onions and our spicy garlic aioli sauce. Served with pickles and potato chips.</p>
+                        <div class="product-price">
+                            <div class="price">7,000 KS</div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
             
         </section>
 
-        <!-- GALLERY SECTION -->
-        <section id="gallery">
-            <a href="#" class="section-title title-animation" id="gallery-cta">Gallery</a>
+        <section class="section" id="contact-info">
+            <p class="section-detail">For pickup and delivery order direct on <a href="#" id="facebook-cta" class="underline-animation">Facebook</a> or call <span>+95 9 755 083653</span></p>
+            <p class="section-detail">you can also email at <a href="#" id="email-cta" class="underline-animation">DDCHICKENDELIVERY@GMAIL.COM</a></p>
         </section>
 
-        <!-- STORE DETAILS SECTION -->
-        <section id="store">
-            
-            <div class="store-info" id="store-hours">
-                <i class="far fa-clock icons"></i>
-                <p class="section-detail">Open 9:00 am - 9:00 pm</br><span>daily</span></p>
-            </div>
-
-            <div class="divider"></div>
-
-            <div class="store-info" id="store-contact">
-                <i class="fas fa-phone icons"></i>
-                <p class="section-detail">Call +95 9 755 083653</br><span>order now</span></p>
-            </div>
-            
+        <section class="section" id="delivery">
+            <a href="#" class="section-title title-animation" id="delivery-cta">Delivery <span>Locations <i class="fas fa-search-location"></i></span></a>
         </section>
+
 
     </main>
 

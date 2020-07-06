@@ -40,7 +40,7 @@
 /*
 
 
-    setting lineheight property - call in set-font-size()
+    setting lineheight property - call in set-fs()
 
 */
 /*
@@ -72,10 +72,74 @@
 */
 /*
 
-	HERO SECTION
+	Font Style for Homepage
 
 */
-.hero-img {
+#homepage .page-title {
+  font-family: "Oswald", sans-serif;
+  color: #fdfdfd;
+  text-transform: uppercase;
+  font-size: 60px;
+  line-height: 60px;
+  margin-bottom: 32px; }
+  @media screen and (min-width: 500px) {
+    #homepage .page-title {
+      font-size: 100px;
+      line-height: 100px; } }
+  @media screen and (min-width: 768px) {
+    #homepage .page-title {
+      font-size: 120px;
+      line-height: 120px; } }
+  @media screen and (min-width: 1024px) {
+    #homepage .page-title {
+      font-size: 130px;
+      line-height: 130px; } }
+  @media screen and (min-width: 500px) {
+    #homepage .page-title {
+      margin-bottom: 48px; } }
+  @media screen and (min-width: 768px) {
+    #homepage .page-title {
+      margin-bottom: 64px; } }
+  @media screen and (min-width: 1024px) {
+    #homepage .page-title {
+      margin-bottom: 90px; } }
+
+#homepage .section-title {
+  font-family: "Oswald", sans-serif;
+  color: #fdfdfd;
+  text-transform: uppercase;
+  font-size: 48px; }
+  @media screen and (min-width: 500px) {
+    #homepage .section-title {
+      font-size: 48px; } }
+  @media screen and (min-width: 768px) {
+    #homepage .section-title {
+      font-size: 58px; } }
+  @media screen and (min-width: 1024px) {
+    #homepage .section-title {
+      font-size: 68px; } }
+
+#homepage .section-detail {
+  font-family: "Lato", sans-serif;
+  color: #fdfdfd;
+  font-weight: 300;
+  font-size: 20px; }
+  @media screen and (min-width: 500px) {
+    #homepage .section-detail {
+      font-size: 20px; } }
+  @media screen and (min-width: 768px) {
+    #homepage .section-detail {
+      font-size: 28px; } }
+  @media screen and (min-width: 1024px) {
+    #homepage .section-detail {
+      font-size: 40px; } }
+
+/*
+
+	CSS Style for the Hero Section
+
+*/
+#homepage > #hero-img {
   position: absolute;
   top: 0;
   left: 0;
@@ -83,123 +147,103 @@
   height: 100%;
   background: url("../img/main-image.jpg") 50% 50%/cover no-repeat;
   z-index: -1; }
-  .hero-img:after {
+  #homepage > #hero-img:after {
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.1); }
 
-#hero-section {
+#homepage > #hero {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-top: 40px; }
   @media screen and (min-width: 500px) {
-    #hero-section {
+    #homepage > #hero {
       margin-top: 130px; } }
   @media screen and (min-width: 768px) {
-    #hero-section {
+    #homepage > #hero {
       margin-top: 130px; } }
   @media screen and (min-width: 1024px) {
-    #hero-section {
+    #homepage > #hero {
       margin-top: 130px; } }
-  #hero-section .center-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start; }
-    #hero-section .center-wrapper h1 {
-      margin-bottom: 32px; }
-      #hero-section .center-wrapper h1 span {
-        font-size: 40px; }
-        @media screen and (min-width: 500px) {
-          #hero-section .center-wrapper h1 span {
-            font-size: 50px; } }
-        @media screen and (min-width: 768px) {
-          #hero-section .center-wrapper h1 span {
-            font-size: 80px; } }
-        @media screen and (min-width: 1024px) {
-          #hero-section .center-wrapper h1 span {
-            font-size: 80px; } }
-      @media screen and (min-width: 500px) {
-        #hero-section .center-wrapper h1 {
-          margin-bottom: 48px; } }
-      @media screen and (min-width: 768px) {
-        #hero-section .center-wrapper h1 {
-          margin-bottom: 64px; } }
-      @media screen and (min-width: 1024px) {
-        #hero-section .center-wrapper h1 {
-          margin-bottom: 90px; } }
-  #hero-section .view-menu {
-    font-family: "Lato", sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    padding: 12px 24px;
-    color: #fdfdfd;
-    -webkit-box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.3);
-    position: relative;
-    transition: all 0.4; }
-    @media screen and (min-width: 500px) {
-      #hero-section .view-menu {
-        font-size: 18px; } }
-    @media screen and (min-width: 768px) {
-      #hero-section .view-menu {
-        font-size: 20px; } }
-    @media screen and (min-width: 1024px) {
-      #hero-section .view-menu {
-        font-size: 20px; } }
-    @media screen and (min-width: 500px) {
-      #hero-section .view-menu {
-        padding: 15px 30px; } }
-    @media screen and (min-width: 768px) {
-      #hero-section .view-menu {
-        padding: 20px 40px; } }
-    @media screen and (min-width: 1024px) {
-      #hero-section .view-menu {
-        padding: 20px 40px; } }
-    #hero-section .view-menu span {
-      margin-right: 16px;
-      transition: all 0.3s; }
-    #hero-section .view-menu::before, #hero-section .view-menu::after {
-      content: '';
-      position: absolute;
-      transition: all 0.3s;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1; }
-    #hero-section .view-menu::before {
-      opacity: 0;
-      background: #030406;
-      transform: scale(1.3, 1.3); }
-    #hero-section .view-menu:hover::before {
-      opacity: 1;
-      transform: scale(1, 1); }
-    #hero-section .view-menu::after {
-      transition: all 0.3s;
-      top: -4px;
-      left: -4px;
-      border: 4px solid white;
-      background: rgba(3, 4, 6, 0.1); }
-    #hero-section .view-menu:hover::after {
-      transform: scale(0, 0);
-      opacity: 0; }
-    #hero-section .view-menu:hover {
-      color: #fe8600; }
+
+#hero > .center-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start; }
+
+#hero .hero-cta {
+  position: relative;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  color: #fdfdfd;
+  font-size: 14px;
+  padding: 12px 24px;
+  -webkit-box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.4; }
+  @media screen and (min-width: 500px) {
+    #hero .hero-cta {
+      font-size: 18px; } }
+  @media screen and (min-width: 768px) {
+    #hero .hero-cta {
+      font-size: 20px; } }
+  @media screen and (min-width: 1024px) {
+    #hero .hero-cta {
+      font-size: 20px; } }
+  @media screen and (min-width: 500px) {
+    #hero .hero-cta {
+      padding: 15px 30px; } }
+  @media screen and (min-width: 768px) {
+    #hero .hero-cta {
+      padding: 20px 40px; } }
+  @media screen and (min-width: 1024px) {
+    #hero .hero-cta {
+      padding: 20px 40px; } }
+  #hero .hero-cta span {
+    margin-right: 16px;
+    transition: all 0.3s; }
+  #hero .hero-cta::before, #hero .hero-cta::after {
+    content: '';
+    position: absolute;
+    transition: all 0.3s;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; }
+  #hero .hero-cta::before {
+    opacity: 0;
+    background: #030406;
+    transform: scale(1.3, 1.3); }
+  #hero .hero-cta:hover::before {
+    opacity: 1;
+    transform: scale(1, 1); }
+  #hero .hero-cta::after {
+    transition: all 0.3s;
+    top: -4px;
+    left: -4px;
+    border: 4px solid white;
+    background: rgba(3, 4, 6, 0.1); }
+  #hero .hero-cta:hover::after {
+    transform: scale(0, 0);
+    opacity: 0; }
+  #hero .hero-cta:hover {
+    color: #fe8600; }
 
 /*
 
-	FACEBOOK SECTION
+	CSS Style for the Follow us on Facebook Section
 
 */
-#facebook-section {
+#homepage > #facebook {
   position: relative; }
-  #facebook-section::before {
+  #homepage > #facebook::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -208,71 +252,64 @@
     left: 0;
     z-index: -1;
     background: #030406; }
-  #facebook-section .center-wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    max-width: 1400px;
-    position: relative; }
-    #facebook-section .center-wrapper .title-wrapper,
-    #facebook-section .center-wrapper .desc-wrapper {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      flex: 1;
-      padding: 0 30px; }
-    #facebook-section .center-wrapper .title-wrapper .follow {
-      position: relative; }
-      #facebook-section .center-wrapper .title-wrapper .follow::before, #facebook-section .center-wrapper .title-wrapper .follow::after {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0; }
-      #facebook-section .center-wrapper .title-wrapper .follow::before {
-        border-top: 4px solid #fff;
-        border-bottom: 4px solid #fff;
-        transition: all 0.3s; }
-      #facebook-section .center-wrapper .title-wrapper .follow:hover::before {
-        transform: scaleX(0); }
-      #facebook-section .center-wrapper .title-wrapper .follow::after {
-        border-top: 4px solid #ff7a07;
-        border-bottom: 4px solid #ff7a07;
-        transform: scaleX(0);
-        transition: all 0.3s; }
-      #facebook-section .center-wrapper .title-wrapper .follow:hover::after {
-        transform: scaleX(1); }
-    #facebook-section .center-wrapper .title-wrapper h2 {
-      color: #fdfdfd; }
-      #facebook-section .center-wrapper .title-wrapper h2 span {
-        color: #ff7a07;
-        white-space: nowrap; }
-        #facebook-section .center-wrapper .title-wrapper h2 span i {
-          font-size: 40px; }
-          @media screen and (min-width: 500px) {
-            #facebook-section .center-wrapper .title-wrapper h2 span i {
-              font-size: 40px; } }
-          @media screen and (min-width: 768px) {
-            #facebook-section .center-wrapper .title-wrapper h2 span i {
-              font-size: 50px; } }
-          @media screen and (min-width: 1024px) {
-            #facebook-section .center-wrapper .title-wrapper h2 span i {
-              font-size: 60px; } }
-    #facebook-section .center-wrapper .desc-wrapper p .call-to-action {
-      color: #fe8600; }
-      #facebook-section .center-wrapper .desc-wrapper p .call-to-action::before {
-        background: #fffffe; }
+
+#facebook > .center-wrapper {
+  max-width: 1400px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto; }
+
+#facebook .title-wrapper,
+#facebook .detail-wrapper {
+  flex: 1;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+
+#facebook .section-title {
+  color: #fdfdfd; }
+  #facebook .section-title span {
+    color: #ff7a07;
+    white-space: nowrap;
+    transition: all 0.3s; }
+    #facebook .section-title span i {
+      font-size: 48px; }
+      @media screen and (min-width: 500px) {
+        #facebook .section-title span i {
+          font-size: 48px; } }
+      @media screen and (min-width: 768px) {
+        #facebook .section-title span i {
+          font-size: 58px; } }
+      @media screen and (min-width: 1024px) {
+        #facebook .section-title span i {
+          font-size: 68px; } }
+  #facebook .section-title:hover {
+    color: #fe8600; }
+  #facebook .section-title:hover span {
+    color: #fdfdfd; }
+  #facebook .section-title::before {
+    border-top: 4px solid #fffffe;
+    border-bottom: 4px solid #fffffe; }
+  #facebook .section-title::after {
+    border-top: 4px solid #ff7a07;
+    border-bottom: 4px solid #ff7a07; }
+
+#facebook .section-detail > .call-to-action {
+  color: #fe8600; }
+  #facebook .section-detail > .call-to-action::before {
+    background: #fffffe; }
 
 /*
 
-	CALLOUTS SECTION
+	CSS Style for the Callouts Section
 
 */
-#callout-section {
+#callouts {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -281,225 +318,209 @@
   margin: 0 auto;
   height: 550px;
   padding: 0; }
-  #callout-section .delivery-location,
-  #callout-section .sign-up {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 32px;
-    flex: 1;
-    width: 100%;
-    height: 100%; }
-    @media screen and (min-width: 500px) {
-      #callout-section .delivery-location,
-      #callout-section .sign-up {
-        padding: 32px; } }
-    @media screen and (min-width: 768px) {
-      #callout-section .delivery-location,
-      #callout-section .sign-up {
-        padding: 48px; } }
-    @media screen and (min-width: 1024px) {
-      #callout-section .delivery-location,
-      #callout-section .sign-up {
-        padding: 48px; } }
-    #callout-section .delivery-location::before,
-    #callout-section .sign-up::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: #fffffe;
-      z-index: -1; }
-    #callout-section .delivery-location .center-wrapper,
-    #callout-section .sign-up .center-wrapper {
-      margin: 0 auto; }
-      #callout-section .delivery-location .center-wrapper h2,
-      #callout-section .sign-up .center-wrapper h2 {
-        color: #030406;
-        margin-bottom: 32px; }
-        #callout-section .delivery-location .center-wrapper h2 span,
-        #callout-section .sign-up .center-wrapper h2 span {
-          white-space: nowrap; }
-      #callout-section .delivery-location .center-wrapper p,
-      #callout-section .sign-up .center-wrapper p {
-        color: #030406; }
-    #callout-section .delivery-location .call-to-action-wrapper,
-    #callout-section .sign-up .call-to-action-wrapper {
-      width: 100%;
-      display: flex;
-      align-items: flex-end;
-      justify-content: flex-end;
-      margin-top: auto; }
-  #callout-section .delivery-location {
-    position: relative; }
-    #callout-section .delivery-location .call-to-action {
-      position: relative; }
-      #callout-section .delivery-location .call-to-action::before {
-        background: #ff7a07; }
-  #callout-section .sign-up {
-    position: relative; }
-    #callout-section .sign-up::before {
-      background: #ff7a07; }
-    #callout-section .sign-up .call-to-action {
-      position: relative; }
-      #callout-section .sign-up .call-to-action::before {
-        background: #fffffe; }
 
-/*
-
-	GALLERY SECTION
-
-*/
-#gallery-section {
+#callouts .section {
+  width: 100%;
+  height: 100%;
+  flex: 1;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  background: url("../img/section-gallery-img.jpg") 50% 20%/cover no-repeat;
-  position: relative; }
-  #gallery-section:after {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 32px; }
+  @media screen and (min-width: 500px) {
+    #callouts .section {
+      padding: 32px; } }
+  @media screen and (min-width: 768px) {
+    #callouts .section {
+      padding: 48px; } }
+  @media screen and (min-width: 1024px) {
+    #callouts .section {
+      padding: 48px; } }
+  #callouts .section::before {
     content: "";
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.1); }
-  #gallery-section h2 {
-    position: relative;
-    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
-    z-index: 1; }
-    #gallery-section h2::before, #gallery-section h2::after {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0; }
-    #gallery-section h2::before {
-      border-top: 4px solid #fff;
-      border-bottom: 4px solid #fff;
-      transition: all 0.3s; }
-    #gallery-section h2:hover::before {
-      transform: scaleX(0); }
-    #gallery-section h2::after {
-      border-top: 4px solid #ff7a07;
-      border-bottom: 4px solid #ff7a07;
-      transform: scaleX(0);
-      transition: all 0.3s; }
-    #gallery-section h2:hover::after {
-      transform: scaleX(1); }
+    z-index: -1; }
+
+#callouts .section-title {
+  color: #030406;
+  margin-bottom: 32px; }
+  #callouts .section-title span {
+    white-space: nowrap; }
+
+#callouts .section-detail {
+  color: #030406; }
+
+#callouts .cta-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-top: auto; }
+
+#delivery-location {
+  position: relative; }
+  #delivery-location::before {
+    background: #fffffe; }
+  #delivery-location #we-deliver-cta {
+    position: relative; }
+    #delivery-location #we-deliver-cta::before {
+      background: #ff7a07; }
+
+#sign-up {
+  position: relative; }
+  #sign-up::before {
+    background: #ff7a07; }
+  #sign-up #sign-up-cta {
+    position: relative; }
+    #sign-up #sign-up-cta::before {
+      background: #fffffe; }
 
 /*
 
-	STORE DETAILS SECTION
+	CSS Style for the Gallery Section
 
 */
-#store-details-section {
+#gallery {
+  background: url("../img/section-gallery-img.jpg") 50% 20%/cover no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+
+#gallery .section-title {
+  color: #fdfdfd; }
+  #gallery .section-title:hover {
+    color: #fe8600; }
+  #gallery .section-title::before {
+    border-top: 4px solid #fffffe;
+    border-bottom: 4px solid #fffffe; }
+  #gallery .section-title::after {
+    border-top: 4px solid #ff7a07;
+    border-bottom: 4px solid #ff7a07; }
+
+/*
+
+	CSS Style for the Store Details
+
+*/
+#store {
+  background: #fffffe;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
-  background: #fffffe; }
-  #store-details-section .store-hours,
-  #store-details-section .store-contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex: 1;
-    position: relative; }
-    #store-details-section .store-hours p,
-    #store-details-section .store-contact p {
-      font-weight: 700;
-      color: #030406;
-      line-height: 1.5;
-      text-align: center; }
-      #store-details-section .store-hours p span,
-      #store-details-section .store-contact p span {
-        font-weight: 300; }
-  #store-details-section .divider {
-    width: 2px;
-    height: 140px;
-    margin: 0 24px;
-    background-color: #000; }
+  margin: 0 auto; }
+
+#store > .store-info {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  #store > .store-info .icons {
+    font-size: 30px;
+    margin-bottom: 48px; }
+    @media screen and (min-width: 500px) {
+      #store > .store-info .icons {
+        font-size: 30px; } }
+    @media screen and (min-width: 768px) {
+      #store > .store-info .icons {
+        font-size: 40px; } }
+    @media screen and (min-width: 1024px) {
+      #store > .store-info .icons {
+        font-size: 50px; } }
+
+#store > .store-info > .section-detail {
+  color: #030406;
+  line-height: 1.5;
+  text-align: center;
+  font-weight: 700; }
+  #store > .store-info > .section-detail span {
+    font-weight: 300; }
+
+#store .divider {
+  width: 2px;
+  height: 140px;
+  margin: 0 24px;
+  background-color: #000; }
 
 /* Smartphones */
 @media only screen and (max-width: 600px) {
-  #facebook-section .center-wrapper {
+  #facebook .center-wrapper {
     flex-direction: column;
     align-items: flex-start; }
-    #facebook-section .center-wrapper .title-wrapper,
-    #facebook-section .center-wrapper .desc-wrapper {
+    #facebook .center-wrapper .title-wrapper,
+    #facebook .center-wrapper .detail-wrapper {
       padding: 0; }
-    #facebook-section .center-wrapper .title-wrapper {
+    #facebook .center-wrapper .title-wrapper {
       margin-bottom: 32px; }
-  #callout-section {
+  #callouts {
     flex-direction: column;
     height: auto; }
-    #callout-section .delivery-location .center-wrapper,
-    #callout-section .sign-up .center-wrapper {
+    #callouts .section .center-wrapper {
       margin: 0; }
-    #callout-section .delivery-location .call-to-action-wrapper,
-    #callout-section .sign-up .call-to-action-wrapper {
+    #callouts .section .cta-wrapper {
       justify-content: flex-start;
       margin-top: 32px; }
-  #store-details-section {
+  #store {
     flex-direction: column; }
-    #store-details-section .store-hours,
-    #store-details-section .store-contact {
+    #store .store-info {
       padding: 16px 0; }
-      #store-details-section .store-hours .icons,
-      #store-details-section .store-contact .icons {
+      #store .store-info .icons {
         margin-bottom: 32px; }
-    #store-details-section .divider {
+    #store .divider {
       width: 200px;
       height: 1px;
       margin: 20px 0; } }
 
 /* Tablet */
 @media (min-width: 601px) and (max-width: 768px) {
-  #callout-section {
+  #callouts {
     max-height: 550px; } }
 
 /* Landscape */
 @media (max-height: 500px) {
-  .hero-img {
-    height: 120%; }
-  #hero-section {
-    height: 100vh;
-    padding: 0;
-    margin-top: 20px; }
-    #hero-section .center-wrapper {
+  #hero-img {
+    height: 120% !important; }
+  #hero {
+    height: 100vh !important;
+    padding: 0 !important;
+    margin-top: 20px !important; }
+    #hero .center-wrapper {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       justify-content: flex-start;
       padding: 32px; } }
     @media screen and (max-height: 500px) and (min-width: 500px) {
-      #hero-section .center-wrapper {
+      #hero .center-wrapper {
         padding: 32px; } }
     @media screen and (max-height: 500px) and (min-width: 768px) {
-      #hero-section .center-wrapper {
+      #hero .center-wrapper {
         padding: 48px; } }
     @media screen and (max-height: 500px) and (min-width: 1024px) {
-      #hero-section .center-wrapper {
+      #hero .center-wrapper {
         padding: 48px; } }
 
 @media (max-height: 500px) {
-      #hero-section .center-wrapper h1,
-      #hero-section .center-wrapper h1 span {
+      #hero .center-wrapper .page-title,
+      #hero .center-wrapper .page-title span {
         font-size: 60px;
         line-height: 60px;
         text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3); }
-      #hero-section .center-wrapper h1 span {
+      #hero .center-wrapper .page-title span {
         font-size: 50px;
         line-height: 50px; }
-      #hero-section .center-wrapper h1 {
+      #hero .center-wrapper .page-title {
         margin-bottom: 32px; }
-      #hero-section .center-wrapper .view-menu {
+      #hero .center-wrapper .hero-cta {
         padding: 10px 15px; }
-  #callout-section {
+  #callouts {
     max-height: 550px; } }
