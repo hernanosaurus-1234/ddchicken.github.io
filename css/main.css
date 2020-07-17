@@ -1,64 +1,41 @@
 /*
 
+    Colors
+
+*/
+/*
+
     Font Properties
 
 */
 /*
 
-
-    Font Sizes Params (fontsize, lineheight)
-
+    Margin Properties
 
 */
 /*
 
-    Font Colors
+    Padding Properties
 
 */
 /*
 
-  Background Color
+    breakpoints
 
 */
 /*
-
-  Highlight Color
-
-*/
-/*
-    button properties
-*/
-/*
-
-    button color
-    
-*/
-/*
-
-
-    setting margin: 0 auto;
-
-*/
-/*
-
 
     setting fontsize
 
 */
 /*
 
-
     setting lineheight property - call in set-fs()
 
 */
 /*
 
-    setting margin-bottom
-
-*/
-/*
-
-    setting margin-top
+    setting margin
 
 */
 /*
@@ -68,14 +45,32 @@
 */
 /*
 
+	setting CTA static and hover colors
+
+*/
+/*
+
+	Set background image
+
+*/
+/*
+
+    Colors
+
+*/
+/*
+
     Font Properties
 
 */
 /*
 
+    Margin Properties
 
-    Font Sizes Params (fontsize, lineheight)
+*/
+/*
 
+    Padding Properties
 
 */
 * {
@@ -90,29 +85,146 @@
   user-select: none; }
 
 body {
-  background: #fffffe;
+  background: #030406;
   overflow-x: hidden; }
 
 a {
-  text-transform: uppercase;
   text-decoration: none; }
 
 ul {
   list-style: none; }
 
-main {
+/*
+
+	Utility Classes
+
+*/
+.tt-u {
+  text-transform: uppercase; }
+
+.tt-c {
+  text-transform: capitalize; }
+
+.no-wrap {
+  white-space: nowrap; }
+
+.animated {
+  transition: all 0.3s; }
+
+.long-animated {
+  transition: all 8s; }
+
+.pos-stat {
+  position: static; }
+
+.pos-rel {
+  position: relative; }
+
+.pos-abs {
+  position: absolute; }
+
+.full-width {
+  width: 100%; }
+
+.full-height {
+  height: 100%; }
+
+.cover {
+  width: 100%;
+  height: 100%; }
+
+.center {
   margin: 0 auto; }
 
 .stop-scrolling {
   overflow: hidden; }
 
+.cta {
+  font-family: "Architects Daughter", cursive;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 14px;
+  line-height: 14px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px; }
+  @media screen and (min-width: 320) {
+    .cta {
+      font-size: 16px;
+      line-height: 16px; } }
+  @media screen and (min-width: 500px) {
+    .cta {
+      font-size: 18px;
+      line-height: 18px; } }
+  @media screen and (min-width: 768px) {
+    .cta {
+      font-size: 20px;
+      line-height: 20px; } }
+  @media screen and (min-width: 1024px) {
+    .cta {
+      font-size: 22px;
+      line-height: 22px; } }
+  @media screen and (min-width: 320) {
+    .cta {
+      padding-left: 32px;
+      padding-right: 32px; } }
+  @media screen and (min-width: 500px) {
+    .cta {
+      padding-left: 32px;
+      padding-right: 32px; } }
+  @media screen and (min-width: 768px) {
+    .cta {
+      padding-left: 32px;
+      padding-right: 32px; } }
+  @media screen and (min-width: 1024px) {
+    .cta {
+      padding-left: 32px;
+      padding-right: 32px; } }
+  @media screen and (min-width: 320) {
+    .cta {
+      padding-top: 10px;
+      padding-bottom: 10px; } }
+  @media screen and (min-width: 500px) {
+    .cta {
+      padding-top: 10px;
+      padding-bottom: 10px; } }
+  @media screen and (min-width: 768px) {
+    .cta {
+      padding-top: 10px;
+      padding-bottom: 10px; } }
+  @media screen and (min-width: 1024px) {
+    .cta {
+      padding-top: 10px;
+      padding-bottom: 10px; } }
+
+i {
+  margin-left: 12px; }
+  @media screen and (min-width: 320) {
+    i {
+      margin-left: 12px; } }
+  @media screen and (min-width: 500px) {
+    i {
+      margin-left: 14px; } }
+  @media screen and (min-width: 768px) {
+    i {
+      margin-left: 16px; } }
+  @media screen and (min-width: 1024px) {
+    i {
+      margin-left: 18px; } }
+
 /*
 
-	HEADER AND SECTION
+	SECTION
 
 */
 section {
-  padding: 32px; }
+  padding: 20px; }
+  @media screen and (min-width: 320) {
+    section {
+      padding: 32px; } }
   @media screen and (min-width: 500px) {
     section {
       padding: 32px; } }
@@ -123,100 +235,96 @@ section {
     section {
       padding: 48px; } }
 
-.center-wrapper {
-  margin: 0 auto; }
+section h1 {
+  font-family: "Oswald", sans-serif;
+  color: #fdfdfd;
+  text-transform: uppercase; }
 
-.order-now-cta,
-.call-to-action {
-  font-size: 20px;
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
-  color: #030406;
+section h2 {
+  font-family: "Oswald", sans-serif;
   text-transform: uppercase;
-  white-space: nowrap;
-  margin-top: auto;
-  display: inline-block; }
+  font-size: 50px;
+  line-height: 50px; }
+  @media screen and (min-width: 320) {
+    section h2 {
+      font-size: 50px;
+      line-height: 50px; } }
   @media screen and (min-width: 500px) {
-    .order-now-cta,
-    .call-to-action {
-      font-size: 20px; } }
+    section h2 {
+      font-size: 60px;
+      line-height: 60px; } }
   @media screen and (min-width: 768px) {
-    .order-now-cta,
-    .call-to-action {
-      font-size: 28px; } }
+    section h2 {
+      font-size: 70px;
+      line-height: 70px; } }
   @media screen and (min-width: 1024px) {
-    .order-now-cta,
-    .call-to-action {
-      font-size: 40px; } }
-  .order-now-cta i,
-  .call-to-action i {
-    margin-left: 16px; }
+    section h2 {
+      font-size: 80px;
+      line-height: 80px; } }
+
+section h3 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 20px; }
+  @media screen and (min-width: 320) {
+    section h3 {
+      font-size: 20px;
+      line-height: 20px; } }
+  @media screen and (min-width: 500px) {
+    section h3 {
+      font-size: 24px;
+      line-height: 24px; } }
+  @media screen and (min-width: 768px) {
+    section h3 {
+      font-size: 28px;
+      line-height: 28px; } }
+  @media screen and (min-width: 1024px) {
+    section h3 {
+      font-size: 32px;
+      line-height: 32px; } }
+
+section p {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 20px; }
+  @media screen and (min-width: 320) {
+    section p {
+      font-size: 20px;
+      line-height: 20px; } }
+  @media screen and (min-width: 500px) {
+    section p {
+      font-size: 24px;
+      line-height: 24px; } }
+  @media screen and (min-width: 768px) {
+    section p {
+      font-size: 28px;
+      line-height: 28px; } }
+  @media screen and (min-width: 1024px) {
+    section p {
+      font-size: 32px;
+      line-height: 32px; } }
 
 /*
 
-	 NAVIGATION
+	 Underline Animation
 
 */
-.nav-items a {
-  font-family: "Lato", sans-serif;
-  color: #fdfdfd;
-  font-weight: 300;
-  text-transform: uppercase;
-  white-space: nowrap;
-  display: inline-block;
-  font-size: 14px; }
-  @media screen and (min-width: 500px) {
-    .nav-items a {
-      font-size: 14px; } }
-  @media screen and (min-width: 768px) {
-    .nav-items a {
-      font-size: 16px; } }
-  @media screen and (min-width: 1024px) {
-    .nav-items a {
-      font-size: 18px; } }
-  .nav-items a::before {
-    background: #fe8600; }
-
-.title-animation {
-  position: relative;
-  transition: all 0.3s; }
-  .title-animation::before, .title-animation::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0; }
-  .title-animation::before {
-    border-top: 4px solid #030406;
-    border-bottom: 4px solid #030406;
-    transition: all 0.3s; }
-  .title-animation:hover::before {
-    transform: scaleX(0); }
-  .title-animation::after {
-    border-top: 4px solid #fffffe;
-    border-bottom: 4px solid #fffffe;
-    transform: scaleX(0);
-    transition: all 0.3s; }
-  .title-animation:hover::after {
-    transform: scaleX(1); }
-
-.underline-animation {
-  position: relative;
-  transition: all 0.3s; }
-  .underline-animation::before {
+.underline {
+  position: relative; }
+  .underline::before {
     content: "";
     position: absolute;
     width: 100%;
     height: 6px;
     left: 0;
     top: 70%;
-    transform: scaleX(0);
     z-index: -1;
+    transform: scaleX(0);
     transform-origin: 0% 50%;
-    transition: all 0.3s;
-    opacity: 1; }
-  .underline-animation:hover::before {
+    transition: all 0.4s; }
+  .underline:hover::before {
     transform: scaleX(1); }
 
 /*
@@ -226,53 +334,3 @@ section {
 
 
 */
-.product-section {
-  margin-top: 60px; }
-  @media screen and (min-width: 500px) {
-    .product-section {
-      margin-top: 80px; } }
-  @media screen and (min-width: 768px) {
-    .product-section {
-      margin-top: 130px; } }
-  @media screen and (min-width: 1024px) {
-    .product-section {
-      margin-top: 130px; } }
-
-.product-section > .center-wrapper > .title-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center; }
-
-.title-wrapper > .page-title {
-  font-family: "Oswald", sans-serif;
-  color: #030406;
-  text-transform: uppercase;
-  font-size: 48px; }
-  @media screen and (min-width: 500px) {
-    .title-wrapper > .page-title {
-      font-size: 48px; } }
-  @media screen and (min-width: 768px) {
-    .title-wrapper > .page-title {
-      font-size: 58px; } }
-  @media screen and (min-width: 1024px) {
-    .title-wrapper > .page-title {
-      font-size: 68px; } }
-
-.title-wrapper > .page-detail {
-  font-family: "Lato", sans-serif;
-  color: #030406;
-  font-weight: 300;
-  font-size: 20px;
-  max-width: 800px;
-  margin-bottom: 90px; }
-  @media screen and (min-width: 500px) {
-    .title-wrapper > .page-detail {
-      font-size: 20px; } }
-  @media screen and (min-width: 768px) {
-    .title-wrapper > .page-detail {
-      font-size: 28px; } }
-  @media screen and (min-width: 1024px) {
-    .title-wrapper > .page-detail {
-      font-size: 40px; } }

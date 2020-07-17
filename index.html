@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700;900&family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
     <link rel="icon" href="img/fav-icon.png"/>
     <link rel="stylesheet" href="css/hamburger.css">
     <link rel="stylesheet" href="css/main.css">
@@ -15,82 +17,73 @@
 </head>
 <body>
 
-    <div class="navigation" id="desktop-nav">
-
+    <div id="desktop-nav">
         <a href="index.html" class="logo">
             <div class="logo-img"></div>
         </a>
-            
+
         <ul class="nav-items">
             <li class="nav-item">
-                <a href="#" class="underline-animation">menu</a>
-                <ul class="nav-sub-items">
-                    <li class="nav-sub-item">
-                        <a href="menu-rotisserie.html" class="underline-animation">rotisserie</a>
-                    </li>
-                    <li class="nav-sub-item">
-                        <a href="menu-sandwhich.html" class="underline-animation">sandwich</a>
-                    </li>
-                    <li class="nav-sub-item">
-                        <a href="menu-sides.html" class="underline-animation">sides</a>
-                    </li>
-                </ul>
+                <a href="#" class="underline animated">menu</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="underline-animation">locations</a>
+                <a href="#" class="underline animated">locations</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="underline-animation">sign up</a>
+                <a href="#" class="underline animated">sign up</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="underline-animation">gallery</a>
+                <a href="#" class="underline animated">gallery</a>
             </li>
-            <li class="nav-item contact">
-                +95 9 755 083653
+            <li class="nav-item">
+                <p>+95 9 755 083653</p>
             </li>
         </ul>
     </div>
 
+    <div id="mobile-nav">
+        <a href="index.html" class="logo">
+            <div class="logo-img"></div>
+        </a>
 
-    <div class="navigation" id="mobile-nav">
+        <ul class="nav-items">
+            <li class="nav-item">
+                <a href="#" class="underline animated">menu</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="underline animated">locations</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="underline animated">sign up</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="underline animated">gallery</a>
+            </li>
+            <li class="nav-item">
+                <p>+95 9 755 083653</p>
+            </li>
+        </ul>
 
-        <div class="nav-items-wrapper">
-            <ul class="nav-items">
-                <li class="nav-item">
-                    <a href="index.html" class="underline-animation">home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="menu-rotisserie.html" class="underline-animation">rotisserie</a>
-                </li>
-                <li class="nav-item">
-                    <a href="menu-sandwhich.html" class="underline-animation">sandwich</a>
-                </li>
-                <li class="nav-item">
-                    <a href="menu-sides.html" class="underline-animation">sides</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="underline-animation">locations</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="underline-animation">sign up</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="underline-animation">gallery</a>
-                </li>
-            </ul>
-
-            <div class="nav-item contact">call direct<br><span>+95 9 755 083653</span></div>
-    
-            <div class="social">
-                <i class="fab fa-facebook-square"></i>
-                <i class="fab fa-twitter-square"></i>
-                <i class="fab fa-instagram-square"></i>
-            </div>
+        <div class="social">
+            <a href="#" class="social-cta animated">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social-cta animated">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-cta animated">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social-cta animated">
+                <i class="fas fa-envelope-open-text"></i>
+            </a>
         </div>
-        
     </div>
 
-    
+    <div id="mobile-nav-header">
+        <h3 class="nav-title">DD CHICKEN DELIVERY</h3>
+    </div>
+
     <div id='hamburger'>
         <div class='hamburger hamburger--spin'>
              
@@ -99,135 +92,159 @@
             </div>
         </div>
     </div>
-   
 
-    <main class="main-content" id="homepage">
-
-        <div id="hero-img"></div>
+    <main class="center" id="homepage">
 
         <!-- HERO SECTION -->
         <section id="hero">
 
-            <div class="center-wrapper">
-                <h1 class="page-title">DD CHICKEN <br>DELIVERY</h1>
-                <a href="#" class="hero-cta"><span>view our menu</span><i class="fas fa-chevron-right"></i></a>
+            <div class="center">
+                <h1 class="title">dd chicken <br>delivery</h1>
+                <a href="#" class="cta animated">view menu<i class="fas fa-chevron-right"></i></a>
+            </div>
+
+        </section>
+
+        <!-- FEATURED SECTION -->
+        <section id="featured">
+
+            <div class="item-grid center">
+                <div class="item" id="item-1">
+                    <div class="image" id="image-box-1"></div>
+                    <h3 class="title">rotisserie</h3>
+                    <p class="detail">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, ipsa.</p>
+                    <a href="#" class="cta animated">open the grill<i class="fas fa-chevron-right"></i></a>
+                </div>
+
+                <div class="item" id="item-2">
+                    <div class="image" id="image-box-2"></div>
+                    <h3 class="title">sandwhich</h3>
+                    <p class="detail">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, ipsa.</p>
+                    <a href="#" class="cta animated">the sandwhich<i class="fas fa-chevron-right"></i></a>
+                </div>
+
+                <div class="item" id="item-3">
+                    <div class="image" id="image-box-3"></div>
+                    <h3 class="title">sides</h3>
+                    <p class="detail">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, ipsa.</p>
+                    <a href="#" class="cta animated">sauces and more<i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ORDER SECTION -->
+        <section id="order">
+
+            <div class="center">
+                <h2 class="title fc-w">stay home. <span class="fc-y">stay safe.</h2>
+                <h2 class="title fc-o">we deliver.</h2>
+                
+            </div>
+
+            <div class="center">
+                <a href="#" class="cta animated">order now<i class="fab fa-facebook-messenger"></i></a> 
+                <p class='circle'>or </p>
+                <p>call <span>+95 9 755 083653</span></p>
+            </div>
+
+        </section>
+
+        <!-- SPLIT SECTION -->
+        <section id="split">
+
+            <div class="split-grid center">
+                <div class="split-box" id="delivery-box">
+                    <h2 class="title">Delivery Locations</h2>
+                    <p class="detail">Reaching out. Ready to be delivered right at your doorstep.</p>
+
+                    <a href="#" class="cta animated" id="we-deliver-cta">find location<i class="fas fa-chevron-right"></i></a>
+                </div>
+
+                <div class="split-box" id="signup-box">
+                    <h2 class="title">Oh yes it's free</h2>
+                    <p class="detail">Get the chance to be the first one to taste any new meal fresh from the grill.</p>
+                    
+                    <a href="#" class="cta animated" id="sign-up-cta">SIGN UP NOW<i class="fas fa-chevron-right"></i></a>
+                </div>
+                
             </div>
 
         </section>
 
         <!-- FACEBOOK SECTION -->
         <section id="facebook">
-
-            <div class="center-wrapper">
-                <div class="title-wrapper">
-                    <a href="#" class="section-title title-animation facebook-cta">
-                        Follow us <span>Facebook <i class="fab fa-facebook-square"></i></span>
-                    </a>
-                </div>
-
-                <div class="detail-wrapper">
-                    <p class="section-detail"><a href="#" class="call-to-action underline-animation">Order Now</a> or Get to  know more about our newest menu items and latest offers.</p>
-                </div>
+            <div class="center">
+                <h2 class="title">news, updates and more...</h2>
+                <p class="detail">Connect via Facebook and get to  know more about our newest menu items and latest offers.</p>
+                <a href="#" class="cta animated">ddchickendelivery<i class="far fa-thumbs-up"></i></a>
             </div>
-            
-        </section>
-
-        <!-- CALLOUTS SECTION -->
-        <section id="callouts">
-            
-            <div class="section" id="delivery-location">
-                <div class="center-wrapper">
-                    <h2 class="section-title">Delivery <span>Locations <i class="fas fa-search-location"></i></span></h2>
-                    <p class="section-detail">Ready to be delivered right at your doorstep.</p>
-                </div>
-
-                <div class="cta-wrapper">
-                    <a href="#" class="call-to-action underline-animation" id="we-deliver-cta">WE DELIVER<i class="fas fa-chevron-right"></i></a>
-                </div>
-            </div>
-           
-            <div class="section" id="sign-up">
-                <div class="center-wrapper">
-                    <h2 class="section-title">Oh yes it's free</h2>
-                    <p class="section-detail">Sign-up and get the chance to be the first one to taste any new meal fresh from the grill.</p>
-                </div>
-                <div class="cta-wrapper">
-                    <a href="#" class="call-to-action underline-animation" id="sign-up-cta">SIGN UP NOW<i class="fas fa-chevron-right"></i></a>
-                </div>
-                
-            </div>
-            
         </section>
 
         <!-- GALLERY SECTION -->
         <section id="gallery">
-            <a href="#" class="section-title title-animation" id="gallery-cta">Gallery</a>
-        </section>
+            <div class="image long-animated"></div>
 
-        <!-- STORE DETAILS SECTION -->
-        <section id="store">
-            
-            <div class="store-info" id="store-hours">
-                <i class="far fa-clock icons"></i>
-                <p class="section-detail">Open 9:00 am - 9:00 pm</br><span>daily</span></p>
+            <div class="center">
+                <h2 class="title animated">hungry yet? <span>check our food</span>.</h2>
             </div>
 
-            <div class="divider"></div>
-
-            <div class="store-info" id="store-contact">
-                <i class="fas fa-phone icons"></i>
-                <p class="section-detail">Call +95 9 755 083653</br><span>order now</span></p>
-            </div>
-            
+            <a href="#" class="cta cover animated">
+                open gallery
+            </a>
         </section>
 
     </main>
 
      <!-- FOOTER SECTION -->
      <footer id="footer">
-
-        <div class="content-wrapper">
-            <div class="title-wrapper">
-                <h2 class="section-title">DD CHICKEN<br><span>Myanmar's first charcoal roasted chicken.</span></h2>
+        <div class="center">
+            <div class="wrapper">
+                <a href="index.html" class="logo">
+                    <div class="logo-img"></div>
+                </a>
+                <h2 class="title">DD CHICKEN DELIVERY.</h2>
+                <p class="detail">Myanmar's first charcoal roasted chicken.</p>
             </div>
-    
-            <div class="navigation" id="footer-nav">
-                <div class="nav-items-wrapper">
-                    <h3 class="nav-title">EXPLORE</h3>
-                    <ul class="nav-items">
-                        <li class="nav-item"><a href="index.html" class="underline-animation">home</a></li>
-                        <li class="nav-item"><a href="#" class="underline-animation">location</a></li>
-                        <li class="nav-item"><a href="#" class="underline-animation">sign up</a></li>
-                        <li class="nav-item"><a href="#" class="underline-animation">gallery</a></li>
-                    </ul>
-                </div>
-    
-                <div class="nav-items-wrapper">
-                    <h3 class="nav-title">MENU</h3>
-                    <ul class="nav-items">
-                        <li class="nav-item"><a href="menu-rotisserie.html" class="underline-animation">rotisserie</a></li>
-                        <li class="nav-item"><a href="menu-sandwhich.html" class="underline-animation">sandwich</a></li>
-                        <li class="nav-item"><a href="menu-sides.html" class="underline-animation">sides</a></li>
-                    </ul>
-                </div>
-    
-                <div class="nav-items-wrapper">
-                    <h3 class="nav-title">FOLLOW</h3>
-                    <ul class="nav-items">
-                        <li class="nav-item"><a href="#" class="underline-animation">facebook</a></li>
-                        <li class="nav-item"><a href="#" class="underline-animation">instagram</a></li>
-                        <li class="nav-item"><a href="#" class="underline-animation">twitter</a></li>
-                    </ul>
-                </div>
-            </div> 
-        </div>
+            <div class="wrapper">
+                <h2 class="title">DD Chicken is Yangon's go-to delivery  food service for fresh, roasted charcoal grilled chicken!</h2>
+                <p class="detail">Our assortment of unique sauces delicious sandwiches and healthy side dishes make DD Chicken a must-have comfort food option. Available in the Yangon area.</p>
 
-        <p class="copyright">&copy 2020 DDCHICKEN. All Rights Reserved.</p>
+                <div class="social">
+                    <div class="chat wrapper">
+                        <p>Start a conversation.</p>
+                        <a href="" class="animated">m.me/ddchickendelivery</a>
+                    </div>
+
+                    <div class="contact wrapper">
+                        <p>Order Now.</p>
+                        <p>+95 9 755 083653</p>
+                    </div>
+
+                    <div class="links wrapper">
+                        <a href="#" class="social-cta animated">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-cta animated">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-cta animated">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-cta animated">
+                            <i class="fas fa-envelope-open-text"></i>
+                        </a>
+                    </div>
+                </div>
+                <p class="copyright">&copy 2020 DDCHICKEN. All Rights Reserved.</p>
+            </div>
+        </div>
 
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/ScrollTrigger.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
