@@ -661,7 +661,7 @@
   #hamburger {
     display: block; }
   #mobile-nav {
-    overflow: scroll; }
+    overflow-y: scroll; }
     #mobile-nav .center {
       margin-bottom: 60px; } }
     @media screen and (max-height: 500px) and (min-width: 320) {
