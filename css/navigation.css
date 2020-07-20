@@ -654,9 +654,3 @@
     display: block; } }
 
 /* Landscape */
-@media (max-height: 500px) {
-  #desktop-nav {
-    display: none; }
-  #mobile-nav,
-  #hamburger {
-    display: block; } }
