@@ -517,12 +517,29 @@
         line-height: 32px; } }
 
 #hamburger {
-  top: 0px;
+  top: 0;
   right: 0;
   position: fixed;
   display: none;
   z-index: 100; }
 
+/* width */
+::-webkit-scrollbar {
+  width: 5px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #141414; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fe8600; }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; }
+
+/* Tablet */
 @media (min-width: 700px) and (max-width: 780px) {
   #desktop-nav .logo .logo-img {
     width: 120px;
