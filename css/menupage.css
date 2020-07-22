@@ -122,7 +122,8 @@
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: rgba(0, 0, 0, 0.1); }
+    background: rgba(20, 20, 20, 0.1);
+    background: linear-gradient(180deg, rgba(20, 20, 20, 0) 0%, rgba(20, 20, 20, 0.2) 90%, #141414 100%); }
   .hero .center-wrapper {
     display: flex;
     flex-direction: column;
@@ -224,183 +225,184 @@
       color: #fe8600;
       background: #030406; }
 
-#menu-items {
-  background: #141414; }
-  #menu-items .sub-title {
-    color: #fdfdfd;
-    text-align: center;
-    font-size: 20px;
-    line-height: 26px;
-    margin-bottom: 32px; }
-    @media screen and (min-width: 320) {
-      #menu-items .sub-title {
-        font-size: 20px;
-        line-height: 26px; } }
-    @media screen and (min-width: 500px) {
-      #menu-items .sub-title {
-        font-size: 24px;
-        line-height: 30px; } }
-    @media screen and (min-width: 768px) {
-      #menu-items .sub-title {
-        font-size: 28px;
-        line-height: 34px; } }
-    @media screen and (min-width: 1024px) {
-      #menu-items .sub-title {
-        font-size: 32px;
-        line-height: 38px; } }
-    @media screen and (min-width: 320) {
-      #menu-items .sub-title {
-        margin-bottom: 32px; } }
-    @media screen and (min-width: 500px) {
-      #menu-items .sub-title {
-        margin-bottom: 40px; } }
-    @media screen and (min-width: 768px) {
-      #menu-items .sub-title {
-        margin-bottom: 48px; } }
-    @media screen and (min-width: 1024px) {
-      #menu-items .sub-title {
-        margin-bottom: 56px; } }
-  #menu-items #gr-rotisserie {
-    max-width: 1000px; }
-    #menu-items #gr-rotisserie .gr-item-2 .gr-item-name {
-      position: relative; }
-      #menu-items #gr-rotisserie .gr-item-2 .gr-item-name::after {
-        content: "";
-        position: absolute;
-        width: 50px;
-        height: 100%;
-        top: -3px;
-        background: url("../img/menupage/rotisserie/chili.png") 50% 50%/cover no-repeat;
-        z-index: 0; }
-    #menu-items #gr-rotisserie .gr-item-3 .gr-item-name {
-      position: relative; }
-      #menu-items #gr-rotisserie .gr-item-3 .gr-item-name::before {
-        content: "ALL NEW";
-        position: absolute;
-        top: -10px;
-        font-weight: 400;
-        color: #e74c3c;
-        font-size: 10px;
-        line-height: 10px; }
-        @media screen and (min-width: 320) {
-          #menu-items #gr-rotisserie .gr-item-3 .gr-item-name::before {
-            font-size: 10px;
-            line-height: 10px; } }
-        @media screen and (min-width: 500px) {
-          #menu-items #gr-rotisserie .gr-item-3 .gr-item-name::before {
-            font-size: 12px;
-            line-height: 12px; } }
-        @media screen and (min-width: 768px) {
-          #menu-items #gr-rotisserie .gr-item-3 .gr-item-name::before {
-            font-size: 12px;
-            line-height: 12px; } }
-        @media screen and (min-width: 1024px) {
-          #menu-items #gr-rotisserie .gr-item-3 .gr-item-name::before {
-            font-size: 12px;
-            line-height: 12px; } }
-    #menu-items #gr-rotisserie .gr-item-img-1 {
-      background: url("../img/menupage/rotisserie/original-chicken.jpg") 50% 50%/cover no-repeat;
+#menu-items .sub-title {
+  color: #fdfdfd;
+  text-align: center;
+  font-size: 20px;
+  line-height: 26px;
+  margin-bottom: 32px; }
+  @media screen and (min-width: 320) {
+    #menu-items .sub-title {
+      font-size: 20px;
+      line-height: 26px; } }
+  @media screen and (min-width: 500px) {
+    #menu-items .sub-title {
+      font-size: 24px;
+      line-height: 30px; } }
+  @media screen and (min-width: 768px) {
+    #menu-items .sub-title {
+      font-size: 28px;
+      line-height: 34px; } }
+  @media screen and (min-width: 1024px) {
+    #menu-items .sub-title {
+      font-size: 32px;
+      line-height: 38px; } }
+  @media screen and (min-width: 320) {
+    #menu-items .sub-title {
+      margin-bottom: 32px; } }
+  @media screen and (min-width: 500px) {
+    #menu-items .sub-title {
+      margin-bottom: 40px; } }
+  @media screen and (min-width: 768px) {
+    #menu-items .sub-title {
+      margin-bottom: 48px; } }
+  @media screen and (min-width: 1024px) {
+    #menu-items .sub-title {
+      margin-bottom: 56px; } }
+
+#menu-items #gr-rotisserie {
+  max-width: 1000px; }
+  #menu-items #gr-rotisserie .gr-item-2 .gr-item-name {
+    position: relative; }
+    #menu-items #gr-rotisserie .gr-item-2 .gr-item-name::after {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 100%;
+      top: -3px;
+      background: url("../img/menupage/rotisserie/chili.png") 50% 50%/cover no-repeat;
       z-index: 0; }
-    #menu-items #gr-rotisserie .gr-item-img-2 {
-      background: url("../img/menupage/rotisserie/chili-chicken.jpg") 50% 50%/cover no-repeat;
-      z-index: 0; }
-    #menu-items #gr-rotisserie .gr-item-img-3 {
-      background: url("../img/menupage/rotisserie/pork-neck.jpg") 50% 50%/cover no-repeat;
-      z-index: 0; }
-  #menu-items #gr-sandwhich {
-    max-width: 680px; }
-    #menu-items #gr-sandwhich .gr-item-2 .gr-item-name {
-      position: relative; }
-      #menu-items #gr-sandwhich .gr-item-2 .gr-item-name::before {
-        content: "NEW RECIPE";
-        position: absolute;
-        top: -10px;
-        font-weight: 400;
-        color: #e74c3c;
-        font-size: 10px;
-        line-height: 10px; }
-        @media screen and (min-width: 320) {
-          #menu-items #gr-sandwhich .gr-item-2 .gr-item-name::before {
-            font-size: 10px;
-            line-height: 10px; } }
-        @media screen and (min-width: 500px) {
-          #menu-items #gr-sandwhich .gr-item-2 .gr-item-name::before {
-            font-size: 12px;
-            line-height: 12px; } }
-        @media screen and (min-width: 768px) {
-          #menu-items #gr-sandwhich .gr-item-2 .gr-item-name::before {
-            font-size: 12px;
-            line-height: 12px; } }
-        @media screen and (min-width: 1024px) {
-          #menu-items #gr-sandwhich .gr-item-2 .gr-item-name::before {
-            font-size: 12px;
-            line-height: 12px; } }
-    #menu-items #gr-sandwhich .gr-item-img-1 {
-      background: url("../img/menupage/sandwhich/garlic-spicy-aioli.jpg") 50% 50%/cover no-repeat;
-      z-index: 0; }
-    #menu-items #gr-sandwhich .gr-item-img-2 {
-      background: url("../img/menupage/sandwhich/barbecue-chicken.jpg") 50% 50%/cover no-repeat;
-      z-index: 0; }
-  #menu-items #gr-sides {
-    max-width: 1000px; }
-    #menu-items #gr-sides .gr-item .gr-item-img {
-      height: 100px;
-      margin-bottom: 12px; }
+  #menu-items #gr-rotisserie .gr-item-3 .gr-item-name {
+    position: relative; }
+    #menu-items #gr-rotisserie .gr-item-3 .gr-item-name::before {
+      content: "ALL NEW";
+      position: absolute;
+      top: -10px;
+      font-weight: 400;
+      color: #e74c3c;
+      font-size: 10px;
+      line-height: 10px; }
       @media screen and (min-width: 320) {
-        #menu-items #gr-sides .gr-item .gr-item-img {
-          margin-bottom: 12px; } }
+        #menu-items #gr-rotisserie .gr-item-3 .gr-item-name::before {
+          font-size: 10px;
+          line-height: 10px; } }
       @media screen and (min-width: 500px) {
-        #menu-items #gr-sides .gr-item .gr-item-img {
-          margin-bottom: 14px; } }
+        #menu-items #gr-rotisserie .gr-item-3 .gr-item-name::before {
+          font-size: 12px;
+          line-height: 12px; } }
       @media screen and (min-width: 768px) {
-        #menu-items #gr-sides .gr-item .gr-item-img {
-          margin-bottom: 16px; } }
+        #menu-items #gr-rotisserie .gr-item-3 .gr-item-name::before {
+          font-size: 12px;
+          line-height: 12px; } }
       @media screen and (min-width: 1024px) {
-        #menu-items #gr-sides .gr-item .gr-item-img {
-          margin-bottom: 18px; } }
-    #menu-items #gr-sides .gr-item .gr-item-detail-wrapper {
+        #menu-items #gr-rotisserie .gr-item-3 .gr-item-name::before {
+          font-size: 12px;
+          line-height: 12px; } }
+  #menu-items #gr-rotisserie .gr-item-img-1 {
+    background: url("../img/menupage/rotisserie/original-chicken.jpg") 50% 50%/cover no-repeat;
+    z-index: 0; }
+  #menu-items #gr-rotisserie .gr-item-img-2 {
+    background: url("../img/menupage/rotisserie/chili-chicken.jpg") 50% 50%/cover no-repeat;
+    z-index: 0; }
+  #menu-items #gr-rotisserie .gr-item-img-3 {
+    background: url("../img/menupage/rotisserie/pork-neck.jpg") 50% 50%/cover no-repeat;
+    z-index: 0; }
+
+#menu-items #gr-sandwhich {
+  max-width: 680px; }
+  #menu-items #gr-sandwhich .gr-item-2 .gr-item-name {
+    position: relative; }
+    #menu-items #gr-sandwhich .gr-item-2 .gr-item-name::before {
+      content: "NEW RECIPE";
+      position: absolute;
+      top: -10px;
+      font-weight: 400;
+      color: #e74c3c;
+      font-size: 10px;
+      line-height: 10px; }
+      @media screen and (min-width: 320) {
+        #menu-items #gr-sandwhich .gr-item-2 .gr-item-name::before {
+          font-size: 10px;
+          line-height: 10px; } }
+      @media screen and (min-width: 500px) {
+        #menu-items #gr-sandwhich .gr-item-2 .gr-item-name::before {
+          font-size: 12px;
+          line-height: 12px; } }
+      @media screen and (min-width: 768px) {
+        #menu-items #gr-sandwhich .gr-item-2 .gr-item-name::before {
+          font-size: 12px;
+          line-height: 12px; } }
+      @media screen and (min-width: 1024px) {
+        #menu-items #gr-sandwhich .gr-item-2 .gr-item-name::before {
+          font-size: 12px;
+          line-height: 12px; } }
+  #menu-items #gr-sandwhich .gr-item-img-1 {
+    background: url("../img/menupage/sandwhich/garlic-spicy-aioli.jpg") 50% 50%/cover no-repeat;
+    z-index: 0; }
+  #menu-items #gr-sandwhich .gr-item-img-2 {
+    background: url("../img/menupage/sandwhich/barbecue-chicken.jpg") 50% 50%/cover no-repeat;
+    z-index: 0; }
+
+#menu-items #gr-sides {
+  max-width: 1000px; }
+  #menu-items #gr-sides .gr-item .gr-item-img {
+    height: 100px;
+    margin-bottom: 12px; }
+    @media screen and (min-width: 320) {
+      #menu-items #gr-sides .gr-item .gr-item-img {
+        margin-bottom: 12px; } }
+    @media screen and (min-width: 500px) {
+      #menu-items #gr-sides .gr-item .gr-item-img {
+        margin-bottom: 14px; } }
+    @media screen and (min-width: 768px) {
+      #menu-items #gr-sides .gr-item .gr-item-img {
+        margin-bottom: 16px; } }
+    @media screen and (min-width: 1024px) {
+      #menu-items #gr-sides .gr-item .gr-item-img {
+        margin-bottom: 18px; } }
+  #menu-items #gr-sides .gr-item .gr-item-detail-wrapper {
+    margin: 0; }
+    #menu-items #gr-sides .gr-item .gr-item-detail-wrapper .gr-item-name {
       margin: 0; }
-      #menu-items #gr-sides .gr-item .gr-item-detail-wrapper .gr-item-name {
-        margin: 0; }
-      #menu-items #gr-sides .gr-item .gr-item-detail-wrapper .gr-item-desc {
-        font-size: 10px;
-        line-height: 10px; }
-        @media screen and (min-width: 320) {
-          #menu-items #gr-sides .gr-item .gr-item-detail-wrapper .gr-item-desc {
-            font-size: 10px;
-            line-height: 10px; } }
-        @media screen and (min-width: 500px) {
-          #menu-items #gr-sides .gr-item .gr-item-detail-wrapper .gr-item-desc {
-            font-size: 12px;
-            line-height: 12px; } }
-        @media screen and (min-width: 768px) {
-          #menu-items #gr-sides .gr-item .gr-item-detail-wrapper .gr-item-desc {
-            font-size: 12px;
-            line-height: 12px; } }
-        @media screen and (min-width: 1024px) {
-          #menu-items #gr-sides .gr-item .gr-item-detail-wrapper .gr-item-desc {
-            font-size: 12px;
-            line-height: 12px; } }
-    #menu-items #gr-sides .gr-item .gr-price-wrapper {
-      margin: 0; }
-    #menu-items #gr-sides .gr-item-img-1 {
-      background: url("../img/menupage/sides/steamed-brocolli-carrots.jpg") 50% 50%/cover no-repeat;
-      z-index: 0; }
-    #menu-items #gr-sides .gr-item-img-2 {
-      background: url("../img/menupage/sides/shan-dripping-potatoes.jpg") 50% 50%/cover no-repeat;
-      z-index: 0; }
-    #menu-items #gr-sides .gr-item-img-3 {
-      background: url("../img/menupage/sides/cayenne-spicy-buttercorn.jpg") 50% 50%/cover no-repeat;
-      z-index: 0; }
-    #menu-items #gr-sides .gr-item-img-4 {
-      background: url("../img/menupage/sides/white-rice.jpg") 50% 50%/cover no-repeat;
-      z-index: 0; }
-    #menu-items #gr-sides .gr-item-img-5 {
-      background: url("../img/menupage/sides/sticky-rice.jpg") 50% 50%/cover no-repeat;
-      z-index: 0; }
-    #menu-items #gr-sides .gr-item-img-6 {
-      background: url("../img/menupage/sides/sauces.jpg") 50% 50%/cover no-repeat;
-      z-index: 0; }
+    #menu-items #gr-sides .gr-item .gr-item-detail-wrapper .gr-item-desc {
+      font-size: 10px;
+      line-height: 10px; }
+      @media screen and (min-width: 320) {
+        #menu-items #gr-sides .gr-item .gr-item-detail-wrapper .gr-item-desc {
+          font-size: 10px;
+          line-height: 10px; } }
+      @media screen and (min-width: 500px) {
+        #menu-items #gr-sides .gr-item .gr-item-detail-wrapper .gr-item-desc {
+          font-size: 12px;
+          line-height: 12px; } }
+      @media screen and (min-width: 768px) {
+        #menu-items #gr-sides .gr-item .gr-item-detail-wrapper .gr-item-desc {
+          font-size: 12px;
+          line-height: 12px; } }
+      @media screen and (min-width: 1024px) {
+        #menu-items #gr-sides .gr-item .gr-item-detail-wrapper .gr-item-desc {
+          font-size: 12px;
+          line-height: 12px; } }
+  #menu-items #gr-sides .gr-item .gr-price-wrapper {
+    margin: 0; }
+  #menu-items #gr-sides .gr-item-img-1 {
+    background: url("../img/menupage/sides/steamed-brocolli-carrots.jpg") 50% 50%/cover no-repeat;
+    z-index: 0; }
+  #menu-items #gr-sides .gr-item-img-2 {
+    background: url("../img/menupage/sides/shan-dripping-potatoes.jpg") 50% 50%/cover no-repeat;
+    z-index: 0; }
+  #menu-items #gr-sides .gr-item-img-3 {
+    background: url("../img/menupage/sides/cayenne-spicy-buttercorn.jpg") 50% 50%/cover no-repeat;
+    z-index: 0; }
+  #menu-items #gr-sides .gr-item-img-4 {
+    background: url("../img/menupage/sides/white-rice.jpg") 50% 50%/cover no-repeat;
+    z-index: 0; }
+  #menu-items #gr-sides .gr-item-img-5 {
+    background: url("../img/menupage/sides/sticky-rice.jpg") 50% 50%/cover no-repeat;
+    z-index: 0; }
+  #menu-items #gr-sides .gr-item-img-6 {
+    background: url("../img/menupage/sides/sauces.jpg") 50% 50%/cover no-repeat;
+    z-index: 0; }
 
 #order {
   background: #141414; }
