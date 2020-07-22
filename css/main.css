@@ -85,7 +85,7 @@
   user-select: none; }
 
 body {
-  background: #030406;
+  background: #141414;
   overflow-x: hidden; }
 
 a {
@@ -133,21 +133,21 @@ ul {
   width: 100%;
   height: 100%; }
 
-.center {
+.center-wrapper {
   margin: 0 auto; }
 
 .stop-scrolling {
   overflow: hidden; }
 
 .cta {
-  z-index: 95;
-  font-family: "Architects Daughter", cursive;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
   white-space: nowrap;
+  z-index: 95;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 20px;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 8px;
@@ -155,19 +155,19 @@ ul {
   @media screen and (min-width: 320) {
     .cta {
       font-size: 16px;
-      line-height: 16px; } }
+      line-height: 22px; } }
   @media screen and (min-width: 500px) {
     .cta {
       font-size: 18px;
-      line-height: 18px; } }
+      line-height: 24px; } }
   @media screen and (min-width: 768px) {
     .cta {
       font-size: 20px;
-      line-height: 20px; } }
+      line-height: 26px; } }
   @media screen and (min-width: 1024px) {
     .cta {
       font-size: 22px;
-      line-height: 22px; } }
+      line-height: 28px; } }
   @media screen and (min-width: 320) {
     .cta {
       padding-left: 32px;
@@ -236,76 +236,288 @@ section {
     section {
       padding: 48px; } }
 
-section h1 {
+main h1 {
   font-family: "Oswald", sans-serif;
   color: #fdfdfd;
   text-transform: uppercase; }
 
-section h2 {
+main h2 {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   font-size: 50px;
   line-height: 50px; }
   @media screen and (min-width: 320) {
-    section h2 {
+    main h2 {
       font-size: 50px;
       line-height: 50px; } }
   @media screen and (min-width: 500px) {
-    section h2 {
+    main h2 {
       font-size: 60px;
       line-height: 60px; } }
   @media screen and (min-width: 768px) {
-    section h2 {
+    main h2 {
       font-size: 70px;
       line-height: 70px; } }
   @media screen and (min-width: 1024px) {
-    section h2 {
+    main h2 {
       font-size: 80px;
       line-height: 80px; } }
 
-section h3 {
+main h3 {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   font-size: 20px;
+  line-height: 26px; }
+  @media screen and (min-width: 320) {
+    main h3 {
+      font-size: 20px;
+      line-height: 26px; } }
+  @media screen and (min-width: 500px) {
+    main h3 {
+      font-size: 24px;
+      line-height: 30px; } }
+  @media screen and (min-width: 768px) {
+    main h3 {
+      font-size: 28px;
+      line-height: 34px; } }
+  @media screen and (min-width: 1024px) {
+    main h3 {
+      font-size: 32px;
+      line-height: 38px; } }
+
+main h4 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
   line-height: 20px; }
   @media screen and (min-width: 320) {
-    section h3 {
-      font-size: 20px;
-      line-height: 20px; } }
+    main h4 {
+      font-size: 16px;
+      line-height: 22px; } }
   @media screen and (min-width: 500px) {
-    section h3 {
-      font-size: 24px;
+    main h4 {
+      font-size: 18px;
       line-height: 24px; } }
   @media screen and (min-width: 768px) {
-    section h3 {
-      font-size: 28px;
-      line-height: 28px; } }
+    main h4 {
+      font-size: 20px;
+      line-height: 26px; } }
   @media screen and (min-width: 1024px) {
-    section h3 {
-      font-size: 32px;
-      line-height: 32px; } }
+    main h4 {
+      font-size: 22px;
+      line-height: 28px; } }
 
-section p {
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-gap: 30px;
+  max-width: 1000px;
+  margin-bottom: 32px; }
+  @media screen and (min-width: 320) {
+    .grid {
+      margin-bottom: 32px; } }
+  @media screen and (min-width: 500px) {
+    .grid {
+      margin-bottom: 40px; } }
+  @media screen and (min-width: 768px) {
+    .grid {
+      margin-bottom: 48px; } }
+  @media screen and (min-width: 1024px) {
+    .grid {
+      margin-bottom: 56px; } }
+  .grid .gr-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); }
+    .grid .gr-item .gr-item-img {
+      height: 200px;
+      margin-bottom: 12px; }
+      @media screen and (min-width: 320) {
+        .grid .gr-item .gr-item-img {
+          margin-bottom: 12px; } }
+      @media screen and (min-width: 500px) {
+        .grid .gr-item .gr-item-img {
+          margin-bottom: 14px; } }
+      @media screen and (min-width: 768px) {
+        .grid .gr-item .gr-item-img {
+          margin-bottom: 16px; } }
+      @media screen and (min-width: 1024px) {
+        .grid .gr-item .gr-item-img {
+          margin-bottom: 18px; } }
+    .grid .gr-item .gr-item-detail-wrapper {
+      flex: 1;
+      padding: 12px;
+      margin-bottom: 14px; }
+      @media screen and (min-width: 320) {
+        .grid .gr-item .gr-item-detail-wrapper {
+          padding: 14px; } }
+      @media screen and (min-width: 500px) {
+        .grid .gr-item .gr-item-detail-wrapper {
+          padding: 14px; } }
+      @media screen and (min-width: 768px) {
+        .grid .gr-item .gr-item-detail-wrapper {
+          padding: 14px; } }
+      @media screen and (min-width: 1024px) {
+        .grid .gr-item .gr-item-detail-wrapper {
+          padding: 14px; } }
+      @media screen and (min-width: 320) {
+        .grid .gr-item .gr-item-detail-wrapper {
+          margin-bottom: 14px; } }
+      @media screen and (min-width: 500px) {
+        .grid .gr-item .gr-item-detail-wrapper {
+          margin-bottom: 16px; } }
+      @media screen and (min-width: 768px) {
+        .grid .gr-item .gr-item-detail-wrapper {
+          margin-bottom: 18px; } }
+      @media screen and (min-width: 1024px) {
+        .grid .gr-item .gr-item-detail-wrapper {
+          margin-bottom: 20px; } }
+      .grid .gr-item .gr-item-detail-wrapper .gr-item-name {
+        font-family: "Lato", sans-serif;
+        font-weight: 900;
+        color: #fe8600;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 14px; }
+        @media screen and (min-width: 320) {
+          .grid .gr-item .gr-item-detail-wrapper .gr-item-name {
+            font-size: 16px;
+            line-height: 22px; } }
+        @media screen and (min-width: 500px) {
+          .grid .gr-item .gr-item-detail-wrapper .gr-item-name {
+            font-size: 18px;
+            line-height: 24px; } }
+        @media screen and (min-width: 768px) {
+          .grid .gr-item .gr-item-detail-wrapper .gr-item-name {
+            font-size: 20px;
+            line-height: 26px; } }
+        @media screen and (min-width: 1024px) {
+          .grid .gr-item .gr-item-detail-wrapper .gr-item-name {
+            font-size: 22px;
+            line-height: 28px; } }
+        @media screen and (min-width: 320) {
+          .grid .gr-item .gr-item-detail-wrapper .gr-item-name {
+            margin-bottom: 14px; } }
+        @media screen and (min-width: 500px) {
+          .grid .gr-item .gr-item-detail-wrapper .gr-item-name {
+            margin-bottom: 16px; } }
+        @media screen and (min-width: 768px) {
+          .grid .gr-item .gr-item-detail-wrapper .gr-item-name {
+            margin-bottom: 18px; } }
+        @media screen and (min-width: 1024px) {
+          .grid .gr-item .gr-item-detail-wrapper .gr-item-name {
+            margin-bottom: 20px; } }
+      .grid .gr-item .gr-item-detail-wrapper .gr-item-desc {
+        font-family: "Lato", sans-serif;
+        font-weight: 300;
+        color: #fdfdfd;
+        font-size: 12px;
+        line-height: 18px; }
+        @media screen and (min-width: 320) {
+          .grid .gr-item .gr-item-detail-wrapper .gr-item-desc {
+            font-size: 12px;
+            line-height: 18px; } }
+        @media screen and (min-width: 500px) {
+          .grid .gr-item .gr-item-detail-wrapper .gr-item-desc {
+            font-size: 14px;
+            line-height: 20px; } }
+        @media screen and (min-width: 768px) {
+          .grid .gr-item .gr-item-detail-wrapper .gr-item-desc {
+            font-size: 16px;
+            line-height: 22px; } }
+        @media screen and (min-width: 1024px) {
+          .grid .gr-item .gr-item-detail-wrapper .gr-item-desc {
+            font-size: 18px;
+            line-height: 24px; } }
+    .grid .gr-item .gr-price-wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 12px; }
+      @media screen and (min-width: 320) {
+        .grid .gr-item .gr-price-wrapper {
+          padding: 14px; } }
+      @media screen and (min-width: 500px) {
+        .grid .gr-item .gr-price-wrapper {
+          padding: 14px; } }
+      @media screen and (min-width: 768px) {
+        .grid .gr-item .gr-price-wrapper {
+          padding: 14px; } }
+      @media screen and (min-width: 1024px) {
+        .grid .gr-item .gr-price-wrapper {
+          padding: 14px; } }
+      .grid .gr-item .gr-price-wrapper .gr-price {
+        font-family: "Lato", sans-serif;
+        color: #fe8600;
+        font-weight: 400;
+        text-transform: uppercase;
+        white-space: nowrap;
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        line-height: 18px; }
+        @media screen and (min-width: 320) {
+          .grid .gr-item .gr-price-wrapper .gr-price {
+            font-size: 12px;
+            line-height: 18px; } }
+        @media screen and (min-width: 500px) {
+          .grid .gr-item .gr-price-wrapper .gr-price {
+            font-size: 14px;
+            line-height: 20px; } }
+        @media screen and (min-width: 768px) {
+          .grid .gr-item .gr-price-wrapper .gr-price {
+            font-size: 16px;
+            line-height: 22px; } }
+        @media screen and (min-width: 1024px) {
+          .grid .gr-item .gr-price-wrapper .gr-price {
+            font-size: 18px;
+            line-height: 24px; } }
+        .grid .gr-item .gr-price-wrapper .gr-price span {
+          color: #fdfdfd;
+          font-size: 10px;
+          line-height: 10px; }
+          @media screen and (min-width: 320) {
+            .grid .gr-item .gr-price-wrapper .gr-price span {
+              font-size: 10px;
+              line-height: 10px; } }
+          @media screen and (min-width: 500px) {
+            .grid .gr-item .gr-price-wrapper .gr-price span {
+              font-size: 12px;
+              line-height: 12px; } }
+          @media screen and (min-width: 768px) {
+            .grid .gr-item .gr-price-wrapper .gr-price span {
+              font-size: 12px;
+              line-height: 12px; } }
+          @media screen and (min-width: 1024px) {
+            .grid .gr-item .gr-price-wrapper .gr-price span {
+              font-size: 12px;
+              line-height: 12px; } }
+
+main p {
   font-family: "Lato", sans-serif;
   font-weight: 300;
   font-size: 20px;
-  line-height: 20px; }
+  line-height: 26px; }
   @media screen and (min-width: 320) {
-    section p {
+    main p {
       font-size: 20px;
-      line-height: 20px; } }
+      line-height: 26px; } }
   @media screen and (min-width: 500px) {
-    section p {
+    main p {
       font-size: 24px;
-      line-height: 24px; } }
+      line-height: 30px; } }
   @media screen and (min-width: 768px) {
-    section p {
+    main p {
       font-size: 28px;
-      line-height: 28px; } }
+      line-height: 34px; } }
   @media screen and (min-width: 1024px) {
-    section p {
+    main p {
       font-size: 32px;
-      line-height: 32px; } }
+      line-height: 38px; } }
 
 /*
 

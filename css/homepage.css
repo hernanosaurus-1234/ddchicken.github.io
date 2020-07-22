@@ -78,71 +78,71 @@
 	CSS Style for the Hero Section
 
 */
-#hero {
+.hero {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-top: 60px; }
   @media screen and (min-width: 320) {
-    #hero {
+    .hero {
       margin-top: 60px; } }
   @media screen and (min-width: 500px) {
-    #hero {
+    .hero {
       margin-top: 100px; } }
   @media screen and (min-width: 768px) {
-    #hero {
+    .hero {
       margin-top: 140px; } }
   @media screen and (min-width: 1024px) {
-    #hero {
+    .hero {
       margin-top: 150px; } }
-  #hero::before {
+  .hero::before {
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
     background: url("../img/homepage/main-image.jpg") 50% 50%/cover no-repeat;
     z-index: -1; }
-  #hero .center {
+  .hero .center-wrapper-wrapper {
     display: flex;
     flex-direction: column;
     align-items: flex-start; }
-  #hero .title {
+  .hero .title {
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 32px; }
     @media screen and (min-width: 320) {
-      #hero .title {
+      .hero .title {
         font-size: 60px;
         line-height: 60px; } }
     @media screen and (min-width: 500px) {
-      #hero .title {
+      .hero .title {
         font-size: 80px;
         line-height: 80px; } }
     @media screen and (min-width: 768px) {
-      #hero .title {
+      .hero .title {
         font-size: 100px;
         line-height: 100px; } }
     @media screen and (min-width: 1024px) {
-      #hero .title {
+      .hero .title {
         font-size: 120px;
         line-height: 120px; } }
     @media screen and (min-width: 320) {
-      #hero .title {
+      .hero .title {
         margin-bottom: 32px; } }
     @media screen and (min-width: 500px) {
-      #hero .title {
+      .hero .title {
         margin-bottom: 40px; } }
     @media screen and (min-width: 768px) {
-      #hero .title {
+      .hero .title {
         margin-bottom: 48px; } }
     @media screen and (min-width: 1024px) {
-      #hero .title {
+      .hero .title {
         margin-bottom: 56px; } }
-  #hero .cta {
+  .hero .cta {
     color: #030406;
     background: #fe8600; }
-    #hero .cta:hover {
+    .hero .cta:hover {
       color: #fe8600;
       background: #030406; }
 
@@ -207,25 +207,25 @@
         align-items: center;
         justify-content: center;
         font-size: 14px;
-        line-height: 14px;
+        line-height: 20px;
         color: #030406;
         background: #fdfdfd; }
         @media screen and (min-width: 320) {
           #featured .item-grid .item .cta {
             font-size: 16px;
-            line-height: 16px; } }
+            line-height: 22px; } }
         @media screen and (min-width: 500px) {
           #featured .item-grid .item .cta {
             font-size: 18px;
-            line-height: 18px; } }
+            line-height: 24px; } }
         @media screen and (min-width: 768px) {
           #featured .item-grid .item .cta {
             font-size: 20px;
-            line-height: 20px; } }
+            line-height: 26px; } }
         @media screen and (min-width: 1024px) {
           #featured .item-grid .item .cta {
             font-size: 22px;
-            line-height: 22px; } }
+            line-height: 28px; } }
         #featured .item-grid .item .cta:hover {
           color: #fdfdfd;
           background: #030406; }
@@ -253,36 +253,36 @@
     @media screen and (min-width: 1024px) {
       #order .title:last-child {
         margin-bottom: 56px; } }
-  #order .center:last-child {
+  #order .center-wrapper:last-child {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center; }
-    #order .center:last-child .cta {
+    #order .center-wrapper:last-child .cta {
       font-size: 14px;
-      line-height: 14px;
+      line-height: 20px;
       color: #fdfdfd;
       background: #3b5998; }
       @media screen and (min-width: 320) {
-        #order .center:last-child .cta {
+        #order .center-wrapper:last-child .cta {
           font-size: 16px;
-          line-height: 16px; } }
-      @media screen and (min-width: 500px) {
-        #order .center:last-child .cta {
-          font-size: 18px;
-          line-height: 18px; } }
-      @media screen and (min-width: 768px) {
-        #order .center:last-child .cta {
-          font-size: 20px;
-          line-height: 20px; } }
-      @media screen and (min-width: 1024px) {
-        #order .center:last-child .cta {
-          font-size: 22px;
           line-height: 22px; } }
-      #order .center:last-child .cta:hover {
+      @media screen and (min-width: 500px) {
+        #order .center-wrapper:last-child .cta {
+          font-size: 18px;
+          line-height: 24px; } }
+      @media screen and (min-width: 768px) {
+        #order .center-wrapper:last-child .cta {
+          font-size: 20px;
+          line-height: 26px; } }
+      @media screen and (min-width: 1024px) {
+        #order .center-wrapper:last-child .cta {
+          font-size: 22px;
+          line-height: 28px; } }
+      #order .center-wrapper:last-child .cta:hover {
         color: #3b5998;
         background: #fdfdfd; }
-    #order .center:last-child .circle {
+    #order .center-wrapper:last-child .circle {
       color: #030406;
       font-weight: 700;
       background: #fdfdfd;
@@ -292,49 +292,49 @@
       margin: 14px;
       padding: 6px; }
       @media screen and (min-width: 320) {
-        #order .center:last-child .circle {
+        #order .center-wrapper:last-child .circle {
           font-size: 10px;
           line-height: 10px; } }
       @media screen and (min-width: 500px) {
-        #order .center:last-child .circle {
+        #order .center-wrapper:last-child .circle {
           font-size: 12px;
           line-height: 12px; } }
       @media screen and (min-width: 768px) {
-        #order .center:last-child .circle {
+        #order .center-wrapper:last-child .circle {
           font-size: 12px;
           line-height: 12px; } }
       @media screen and (min-width: 1024px) {
-        #order .center:last-child .circle {
+        #order .center-wrapper:last-child .circle {
           font-size: 12px;
           line-height: 12px; } }
       @media screen and (min-width: 320) {
-        #order .center:last-child .circle {
+        #order .center-wrapper:last-child .circle {
           margin: 14px; } }
       @media screen and (min-width: 500px) {
-        #order .center:last-child .circle {
+        #order .center-wrapper:last-child .circle {
           margin: 16px; } }
       @media screen and (min-width: 768px) {
-        #order .center:last-child .circle {
+        #order .center-wrapper:last-child .circle {
           margin: 18px; } }
       @media screen and (min-width: 1024px) {
-        #order .center:last-child .circle {
+        #order .center-wrapper:last-child .circle {
           margin: 20px; } }
       @media screen and (min-width: 320) {
-        #order .center:last-child .circle {
+        #order .center-wrapper:last-child .circle {
           padding: 6px; } }
       @media screen and (min-width: 500px) {
-        #order .center:last-child .circle {
+        #order .center-wrapper:last-child .circle {
           padding: 6px; } }
       @media screen and (min-width: 768px) {
-        #order .center:last-child .circle {
+        #order .center-wrapper:last-child .circle {
           padding: 6px; } }
       @media screen and (min-width: 1024px) {
-        #order .center:last-child .circle {
+        #order .center-wrapper:last-child .circle {
           padding: 6px; } }
-    #order .center:last-child p {
+    #order .center-wrapper:last-child p {
       color: #fdfdfd;
       white-space: nowrap; }
-      #order .center:last-child p span {
+      #order .center-wrapper:last-child p span {
         font-weight: 900; }
 
 #split {
@@ -434,7 +434,7 @@
 */
 #facebook {
   background: #141414; }
-  #facebook .center {
+  #facebook .center-wrapper-wrapper {
     max-width: 1000px;
     display: flex;
     flex-direction: column;
@@ -558,7 +558,7 @@
 
 /* Smartphones */
 @media only screen and (max-width: 600px) {
-  #order .center:last-child {
+  #order .center-wrapper-wrapper:last-child {
     display: flex;
     flex-direction: column; } }
 
