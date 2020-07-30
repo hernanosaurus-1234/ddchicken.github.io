@@ -326,12 +326,24 @@ main h4 {
     .grid {
       margin-bottom: 56px; } }
   .grid .gr-item {
+    background: #141414;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); }
+    .grid .gr-item::before {
+      content: "";
+      position: absolute;
+      width: 105%;
+      height: 105%;
+      top: -2.5%;
+      left: -2.5%;
+      z-index: -1;
+      background: #fe8600;
+      opacity: 0.7; }
     .grid .gr-item .gr-item-img {
       height: 200px;
       margin-bottom: 12px; }
