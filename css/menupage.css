@@ -10,16 +10,6 @@
 */
 /*
 
-    Margin Properties
-
-*/
-/*
-
-    Padding Properties
-
-*/
-/*
-
     breakpoints
 
 */
@@ -30,7 +20,7 @@
 */
 /*
 
-    setting lineheight property - call in set-fs()
+    setting lineheight property - call in set-fontsize()
 
 */
 /*
@@ -53,512 +43,294 @@
 	Set background image
 
 */
-/*
-
-    Colors
-
-*/
-/*
-
-    Font Properties
-
-*/
-/*
-
-    Margin Properties
-
-*/
-/*
-
-    Padding Properties
-
-*/
-/*
-
-	CSS Style for the Menu Section
-
-*/
-.hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 60px;
-  margin-bottom: 32px; }
-  @media screen and (min-width: 320) {
-    .hero {
-      margin-top: 60px; } }
-  @media screen and (min-width: 500px) {
-    .hero {
-      margin-top: 100px; } }
-  @media screen and (min-width: 768px) {
-    .hero {
-      margin-top: 140px; } }
-  @media screen and (min-width: 1024px) {
-    .hero {
-      margin-top: 150px; } }
-  @media screen and (min-width: 320) {
-    .hero {
-      margin-bottom: 32px; } }
-  @media screen and (min-width: 500px) {
-    .hero {
-      margin-bottom: 40px; } }
-  @media screen and (min-width: 768px) {
-    .hero {
-      margin-bottom: 48px; } }
-  @media screen and (min-width: 1024px) {
-    .hero {
-      margin-bottom: 56px; } }
-  .hero::before {
+#hero-section {
+  padding: 0;
+  overflow: hidden;
+  position: relative; }
+  #hero-section::before {
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
-    z-index: -1;
-    background: url("../img/menupage/wallpaper/_menu-wallpaper.jpg") 50% 50%/cover no-repeat; }
-  .hero::after {
+    top: 0;
+    left: 0;
+    background: #030406;
+    z-index: -1; }
+  #hero-section .center-wrapper {
+    margin-top: calc(100px + (160 - 100) * ((100vw - 300px) / (1600 - 300)));
+    padding: calc(32px + (96 - 32) * ((100vw - 300px) / (1600 - 300))) calc(24px + (48 - 24) * ((100vw - 300px) / (1600 - 300)));
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
+    #hero-section .center-wrapper .cta-sml {
+      background: #fe8600;
+      color: #030406; }
+      #hero-section .center-wrapper .cta-sml:hover {
+        background: #ffffff;
+        color: #030406; }
+
+#menu-items-section {
+  position: relative; }
+  #menu-items-section::before {
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
-    z-index: -1;
-    background: rgba(20, 20, 20, 0.1);
-    background: linear-gradient(180deg, rgba(20, 20, 20, 0) 0%, rgba(20, 20, 20, 0.2) 90%, #141414 100%); }
-  .hero .center-wrapper {
+    top: 0;
+    left: 0;
+    background: #030406;
+    z-index: -1; }
+  #menu-items-section .center-wrapper {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    max-width: 1000px; }
-  .hero .sub-title {
-    color: #fdfdfd;
-    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
-    font-size: 50px;
-    line-height: 50px;
-    margin-bottom: 14px; }
-    @media screen and (min-width: 320) {
-      .hero .sub-title {
-        font-size: 50px;
-        line-height: 50px; } }
-    @media screen and (min-width: 500px) {
-      .hero .sub-title {
-        font-size: 60px;
-        line-height: 60px; } }
-    @media screen and (min-width: 768px) {
-      .hero .sub-title {
-        font-size: 70px;
-        line-height: 70px; } }
-    @media screen and (min-width: 1024px) {
-      .hero .sub-title {
-        font-size: 80px;
-        line-height: 80px; } }
-    @media screen and (min-width: 320) {
-      .hero .sub-title {
-        margin-bottom: 14px; } }
-    @media screen and (min-width: 500px) {
-      .hero .sub-title {
-        margin-bottom: 16px; } }
-    @media screen and (min-width: 768px) {
-      .hero .sub-title {
-        margin-bottom: 18px; } }
-    @media screen and (min-width: 1024px) {
-      .hero .sub-title {
-        margin-bottom: 20px; } }
-  .hero .detail {
-    color: #fdfdfd;
-    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
-    font-size: 14px;
-    line-height: 20px;
-    margin-bottom: 32px; }
-    @media screen and (min-width: 320) {
-      .hero .detail {
-        font-size: 16px;
-        line-height: 22px; } }
-    @media screen and (min-width: 500px) {
-      .hero .detail {
-        font-size: 18px;
-        line-height: 24px; } }
-    @media screen and (min-width: 768px) {
-      .hero .detail {
-        font-size: 20px;
-        line-height: 26px; } }
-    @media screen and (min-width: 1024px) {
-      .hero .detail {
-        font-size: 22px;
-        line-height: 28px; } }
-    @media screen and (min-width: 320) {
-      .hero .detail {
-        margin-bottom: 32px; } }
-    @media screen and (min-width: 500px) {
-      .hero .detail {
-        margin-bottom: 40px; } }
-    @media screen and (min-width: 768px) {
-      .hero .detail {
-        margin-bottom: 48px; } }
-    @media screen and (min-width: 1024px) {
-      .hero .detail {
-        margin-bottom: 56px; } }
-  .hero .cta {
-    font-size: 12px;
-    line-height: 18px;
-    -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
-    color: #030406;
-    background: #fe8600; }
-    @media screen and (min-width: 320) {
-      .hero .cta {
-        font-size: 12px;
-        line-height: 18px; } }
-    @media screen and (min-width: 500px) {
-      .hero .cta {
-        font-size: 14px;
-        line-height: 20px; } }
-    @media screen and (min-width: 768px) {
-      .hero .cta {
-        font-size: 16px;
-        line-height: 22px; } }
-    @media screen and (min-width: 1024px) {
-      .hero .cta {
-        font-size: 18px;
-        line-height: 24px; } }
-    .hero .cta:hover {
-      color: #fe8600;
-      background: #030406; }
+    padding: calc(32px + (96 - 32) * ((100vw - 300px) / (1600 - 300))) calc(24px + (48 - 24) * ((100vw - 300px) / (1600 - 300))); }
+    #menu-items-section .center-wrapper h2 {
+      color: #ffffff;
+      margin-bottom: calc(24px + (48 - 24) * ((100vw - 300px) / (1600 - 300))); }
+    #menu-items-section .center-wrapper .grid-wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      grid-gap: calc(15px + (30 - 15) * ((100vw - 300px) / (1600 - 300)));
+      margin-bottom: calc(32px + (96 - 32) * ((100vw - 300px) / (1600 - 300))); }
+      #menu-items-section .center-wrapper .grid-wrapper .item-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between; }
+        #menu-items-section .center-wrapper .grid-wrapper .item-wrapper .item-img {
+          width: 100%;
+          height: 150px;
+          margin-bottom: calc(8px + (32 - 8) * ((100vw - 300px) / (1600 - 300))); }
+        #menu-items-section .center-wrapper .grid-wrapper .item-wrapper #img-1 {
+          background: url("../img/menupage/chicken/1_orig_whole.jpg") 50% 50%/cover no-repeat; }
+        #menu-items-section .center-wrapper .grid-wrapper .item-wrapper #img-2 {
+          background: url("../img/menupage/chicken/2_orig_half.jpg") 50% 50%/cover no-repeat; }
+        #menu-items-section .center-wrapper .grid-wrapper .item-wrapper #img-3 {
+          background: url("../img/menupage/chicken/3_spicy_whole.jpg") 50% 50%/cover no-repeat; }
+        #menu-items-section .center-wrapper .grid-wrapper .item-wrapper #img-4 {
+          background: url("../img/menupage/chicken/4_spicy_half.jpg") 50% 50%/cover no-repeat; }
+        #menu-items-section .center-wrapper .grid-wrapper .item-wrapper #img-5 {
+          background: url("../img/menupage/chicken/5_pork_whole.jpg") 50% 50%/cover no-repeat; }
+        #menu-items-section .center-wrapper .grid-wrapper .item-wrapper #img-6 {
+          background: url("../img/menupage/chicken/6_sandwich_bbqchicken.jpg") 50% 50%/cover no-repeat; }
+        #menu-items-section .center-wrapper .grid-wrapper .item-wrapper #img-7 {
+          background: url("../img/menupage/chicken/7_sandwich_spicygarlicchicken.jpg") 50% 50%/cover no-repeat; }
+        #menu-items-section .center-wrapper .grid-wrapper .item-wrapper #img-8 {
+          background: url("../img/menupage/chicken/8_sandwich_spicygarlicpork.jpg") 50% 50%/cover no-repeat; }
+        #menu-items-section .center-wrapper .grid-wrapper .item-wrapper #img-9 {
+          background: url("../img/menupage/chicken/9_sandiwch_churrig_pork.jpg") 50% 50%/cover no-repeat; }
+        #menu-items-section .center-wrapper .grid-wrapper .item-wrapper #img-10 {
+          background: url("../img/menupage/chicken/10_side_brocolli_carrots.jpg") 50% 50%/cover no-repeat; }
+        #menu-items-section .center-wrapper .grid-wrapper .item-wrapper #img-11 {
+          background: url("../img/menupage/chicken/11_side_roasted potatoes.jpg") 50% 50%/cover no-repeat; }
+        #menu-items-section .center-wrapper .grid-wrapper .item-wrapper #img-12 {
+          background: url("../img/menupage/chicken/12_side_grilled corn_salad.jpg") 50% 50%/cover no-repeat; }
+        #menu-items-section .center-wrapper .grid-wrapper .item-wrapper #img-13 {
+          background: url("../img/menupage/chicken/13_side_pickled cucumbers.jpg") 50% 50%/cover no-repeat; }
+        #menu-items-section .center-wrapper .grid-wrapper .item-wrapper #img-14 {
+          background: url("../img/menupage/chicken/14_sides_steamedrice.jpg") 50% 50%/cover no-repeat; }
+        #menu-items-section .center-wrapper .grid-wrapper .item-wrapper #img-15 {
+          background: url("../img/menupage/chicken/15_sides_stickyrice.jpg") 50% 50%/cover no-repeat; }
+        #menu-items-section .center-wrapper .grid-wrapper .item-wrapper #img-16 {
+          background: url("../img/menupage/chicken/16_sauce_BBQsauce.jpg") 50% 50%/cover no-repeat; }
+        #menu-items-section .center-wrapper .grid-wrapper .item-wrapper #img-17 {
+          background: url("../img/menupage/chicken/17_sauce_periperi.jpg") 50% 50%/cover no-repeat; }
+        #menu-items-section .center-wrapper .grid-wrapper .item-wrapper #img-18 {
+          background: url("../img/menupage/chicken/18_sauce_churrig.jpg") 50% 50%/cover no-repeat; }
+        #menu-items-section .center-wrapper .grid-wrapper .item-wrapper #img-19 {
+          background: url("../img/menupage/chicken/19_sauce_spicygarlicaioli.jpg") 50% 50%/cover no-repeat; }
+        #menu-items-section .center-wrapper .grid-wrapper .item-wrapper #img-20 {
+          background: url("../img/menupage/chicken/20_smalldrinks.jpg") 50% 50%/cover no-repeat; }
+        #menu-items-section .center-wrapper .grid-wrapper .item-wrapper #img-21 {
+          background: url("../img/menupage/chicken/21_largedrinks.jpg") 50% 50%/cover no-repeat; }
+        #menu-items-section .center-wrapper .grid-wrapper .item-wrapper #img-22 {
+          background: url("../img/menupage/chicken/22_package_family A original.jpg") 50% 50%/cover no-repeat; }
+        #menu-items-section .center-wrapper .grid-wrapper .item-wrapper #img-23 {
+          background: url("../img/menupage/chicken/23_package_family A spicy.jpg") 50% 50%/cover no-repeat; }
+        #menu-items-section .center-wrapper .grid-wrapper .item-wrapper #img-24 {
+          background: url("../img/menupage/chicken/24_package_family B.jpg") 50% 50%/cover no-repeat; }
+        #menu-items-section .center-wrapper .grid-wrapper .item-wrapper .spicy {
+          position: relative; }
+          #menu-items-section .center-wrapper .grid-wrapper .item-wrapper .spicy::after {
+            content: "";
+            position: absolute;
+            width: 50px;
+            height: 120%;
+            top: -3px;
+            background: url("../img/menupage/rotisserie/chili.png") 50% 50%/cover no-repeat; }
+        #menu-items-section .center-wrapper .grid-wrapper .item-wrapper .allnew {
+          position: relative; }
+          #menu-items-section .center-wrapper .grid-wrapper .item-wrapper .allnew::before {
+            content: "ALL NEW";
+            position: absolute;
+            top: -18px;
+            font-weight: 400;
+            color: #e74c3c;
+            font-size: calc(8px + (10 - 8) * ((100vw - 300px) / (1600 - 300))); }
+        #menu-items-section .center-wrapper .grid-wrapper .item-wrapper h4 {
+          color: #fe8600; }
+        #menu-items-section .center-wrapper .grid-wrapper .item-wrapper .description {
+          color: #aaaaaa;
+          text-align: left; }
+        #menu-items-section .center-wrapper .grid-wrapper .item-wrapper .price {
+          font-weight: 700;
+          color: #ffffff; }
 
-#menu-items .sub-title {
-  color: #fdfdfd;
-  text-align: center;
-  font-size: 20px;
-  line-height: 26px;
-  margin-bottom: 32px; }
-  @media screen and (min-width: 320) {
-    #menu-items .sub-title {
-      font-size: 20px;
-      line-height: 26px; } }
-  @media screen and (min-width: 500px) {
-    #menu-items .sub-title {
-      font-size: 24px;
-      line-height: 30px; } }
-  @media screen and (min-width: 768px) {
-    #menu-items .sub-title {
-      font-size: 28px;
-      line-height: 34px; } }
-  @media screen and (min-width: 1024px) {
-    #menu-items .sub-title {
-      font-size: 32px;
-      line-height: 38px; } }
-  @media screen and (min-width: 320) {
-    #menu-items .sub-title {
-      margin-bottom: 32px; } }
-  @media screen and (min-width: 500px) {
-    #menu-items .sub-title {
-      margin-bottom: 40px; } }
-  @media screen and (min-width: 768px) {
-    #menu-items .sub-title {
-      margin-bottom: 48px; } }
-  @media screen and (min-width: 1024px) {
-    #menu-items .sub-title {
-      margin-bottom: 56px; } }
-
-#menu-items #gr-rotisserie {
-  max-width: 1000px; }
-  #menu-items #gr-rotisserie .gr-item-2 .gr-item-name {
-    position: relative; }
-    #menu-items #gr-rotisserie .gr-item-2 .gr-item-name::after {
-      content: "";
-      position: absolute;
-      width: 50px;
-      height: 100%;
-      top: -3px;
-      background: url("../img/menupage/rotisserie/chili.png") 50% 50%/cover no-repeat;
-      z-index: 0; }
-  #menu-items #gr-rotisserie .gr-item-3 .gr-item-name {
-    position: relative; }
-    #menu-items #gr-rotisserie .gr-item-3 .gr-item-name::before {
-      content: "ALL NEW";
-      position: absolute;
-      top: -10px;
-      font-weight: 400;
-      color: #e74c3c;
-      font-size: 10px;
-      line-height: 10px; }
-      @media screen and (min-width: 320) {
-        #menu-items #gr-rotisserie .gr-item-3 .gr-item-name::before {
-          font-size: 10px;
-          line-height: 10px; } }
-      @media screen and (min-width: 500px) {
-        #menu-items #gr-rotisserie .gr-item-3 .gr-item-name::before {
-          font-size: 12px;
-          line-height: 12px; } }
-      @media screen and (min-width: 768px) {
-        #menu-items #gr-rotisserie .gr-item-3 .gr-item-name::before {
-          font-size: 12px;
-          line-height: 12px; } }
-      @media screen and (min-width: 1024px) {
-        #menu-items #gr-rotisserie .gr-item-3 .gr-item-name::before {
-          font-size: 12px;
-          line-height: 12px; } }
-  #menu-items #gr-rotisserie .gr-item-img-1 {
-    background: url("../img/menupage/rotisserie/original-chicken.jpg") 50% 50%/cover no-repeat;
-    z-index: 0; }
-  #menu-items #gr-rotisserie .gr-item-img-2 {
-    background: url("../img/menupage/rotisserie/chili-chicken.jpg") 50% 50%/cover no-repeat;
-    z-index: 0; }
-  #menu-items #gr-rotisserie .gr-item-img-3 {
-    background: url("../img/menupage/rotisserie/pork-neck.jpg") 50% 50%/cover no-repeat;
-    z-index: 0; }
-
-#menu-items #gr-sandwhich {
-  max-width: 680px; }
-  #menu-items #gr-sandwhich .gr-item-2 .gr-item-name {
-    position: relative; }
-    #menu-items #gr-sandwhich .gr-item-2 .gr-item-name::before {
-      content: "NEW RECIPE";
-      position: absolute;
-      top: -10px;
-      font-weight: 400;
-      color: #e74c3c;
-      font-size: 10px;
-      line-height: 10px; }
-      @media screen and (min-width: 320) {
-        #menu-items #gr-sandwhich .gr-item-2 .gr-item-name::before {
-          font-size: 10px;
-          line-height: 10px; } }
-      @media screen and (min-width: 500px) {
-        #menu-items #gr-sandwhich .gr-item-2 .gr-item-name::before {
-          font-size: 12px;
-          line-height: 12px; } }
-      @media screen and (min-width: 768px) {
-        #menu-items #gr-sandwhich .gr-item-2 .gr-item-name::before {
-          font-size: 12px;
-          line-height: 12px; } }
-      @media screen and (min-width: 1024px) {
-        #menu-items #gr-sandwhich .gr-item-2 .gr-item-name::before {
-          font-size: 12px;
-          line-height: 12px; } }
-  #menu-items #gr-sandwhich .gr-item-img-1 {
-    background: url("../img/menupage/sandwhich/garlic-spicy-aioli.jpg") 50% 50%/cover no-repeat;
-    z-index: 0; }
-  #menu-items #gr-sandwhich .gr-item-img-2 {
-    background: url("../img/menupage/sandwhich/barbecue-chicken.jpg") 50% 50%/cover no-repeat;
-    z-index: 0; }
-
-#menu-items #gr-sides {
-  max-width: 1000px; }
-  #menu-items #gr-sides .gr-item .gr-item-img {
-    height: 100px;
-    margin-bottom: 12px; }
-    @media screen and (min-width: 320) {
-      #menu-items #gr-sides .gr-item .gr-item-img {
-        margin-bottom: 12px; } }
-    @media screen and (min-width: 500px) {
-      #menu-items #gr-sides .gr-item .gr-item-img {
-        margin-bottom: 14px; } }
-    @media screen and (min-width: 768px) {
-      #menu-items #gr-sides .gr-item .gr-item-img {
-        margin-bottom: 16px; } }
-    @media screen and (min-width: 1024px) {
-      #menu-items #gr-sides .gr-item .gr-item-img {
-        margin-bottom: 18px; } }
-  #menu-items #gr-sides .gr-item .gr-item-detail-wrapper {
-    margin: 0; }
-    #menu-items #gr-sides .gr-item .gr-item-detail-wrapper .gr-item-name {
-      margin: 0; }
-    #menu-items #gr-sides .gr-item .gr-item-detail-wrapper .gr-item-desc {
-      font-size: 10px;
-      line-height: 10px; }
-      @media screen and (min-width: 320) {
-        #menu-items #gr-sides .gr-item .gr-item-detail-wrapper .gr-item-desc {
-          font-size: 10px;
-          line-height: 10px; } }
-      @media screen and (min-width: 500px) {
-        #menu-items #gr-sides .gr-item .gr-item-detail-wrapper .gr-item-desc {
-          font-size: 12px;
-          line-height: 12px; } }
-      @media screen and (min-width: 768px) {
-        #menu-items #gr-sides .gr-item .gr-item-detail-wrapper .gr-item-desc {
-          font-size: 12px;
-          line-height: 12px; } }
-      @media screen and (min-width: 1024px) {
-        #menu-items #gr-sides .gr-item .gr-item-detail-wrapper .gr-item-desc {
-          font-size: 12px;
-          line-height: 12px; } }
-  #menu-items #gr-sides .gr-item .gr-price-wrapper {
-    margin: 0; }
-  #menu-items #gr-sides .gr-item-img-1 {
-    background: url("../img/menupage/sides/steamed-brocolli-carrots.jpg") 50% 50%/cover no-repeat;
-    z-index: 0; }
-  #menu-items #gr-sides .gr-item-img-2 {
-    background: url("../img/menupage/sides/shan-dripping-potatoes.jpg") 50% 50%/cover no-repeat;
-    z-index: 0; }
-  #menu-items #gr-sides .gr-item-img-3 {
-    background: url("../img/menupage/sides/cayenne-spicy-buttercorn.jpg") 50% 50%/cover no-repeat;
-    z-index: 0; }
-  #menu-items #gr-sides .gr-item-img-4 {
-    background: url("../img/menupage/sides/white-rice.jpg") 50% 50%/cover no-repeat;
-    z-index: 0; }
-  #menu-items #gr-sides .gr-item-img-5 {
-    background: url("../img/menupage/sides/sticky-rice.jpg") 50% 50%/cover no-repeat;
-    z-index: 0; }
-  #menu-items #gr-sides .gr-item-img-6 {
-    background: url("../img/menupage/sides/sauces.jpg") 50% 50%/cover no-repeat;
-    z-index: 0; }
-
-#order {
-  background: #141414; }
-  #order .title {
-    color: #fdfdfd;
-    text-align: center; }
-    #order .title span {
-      color: #ffe074;
-      white-space: nowrap; }
-  #order .title:last-child {
-    color: #fe8600;
-    margin-bottom: 32px; }
-    @media screen and (min-width: 320) {
-      #order .title:last-child {
-        margin-bottom: 32px; } }
-    @media screen and (min-width: 500px) {
-      #order .title:last-child {
-        margin-bottom: 40px; } }
-    @media screen and (min-width: 768px) {
-      #order .title:last-child {
-        margin-bottom: 48px; } }
-    @media screen and (min-width: 1024px) {
-      #order .title:last-child {
-        margin-bottom: 56px; } }
-  #order .center-wrapper:last-child {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center; }
-    #order .center-wrapper:last-child .cta {
-      font-size: 14px;
-      line-height: 20px;
-      color: #fdfdfd;
-      background: #3b5998; }
-      @media screen and (min-width: 320) {
-        #order .center-wrapper:last-child .cta {
-          font-size: 16px;
-          line-height: 22px; } }
-      @media screen and (min-width: 500px) {
-        #order .center-wrapper:last-child .cta {
-          font-size: 18px;
-          line-height: 24px; } }
-      @media screen and (min-width: 768px) {
-        #order .center-wrapper:last-child .cta {
-          font-size: 20px;
-          line-height: 26px; } }
-      @media screen and (min-width: 1024px) {
-        #order .center-wrapper:last-child .cta {
-          font-size: 22px;
-          line-height: 28px; } }
-      #order .center-wrapper:last-child .cta:hover {
-        color: #3b5998;
-        background: #fdfdfd; }
-    #order .center-wrapper:last-child .circle {
-      color: #030406;
-      font-weight: 700;
-      background: #fdfdfd;
-      border-radius: 50%;
-      font-size: 10px;
-      line-height: 10px;
-      margin: 14px;
-      padding: 6px; }
-      @media screen and (min-width: 320) {
-        #order .center-wrapper:last-child .circle {
-          font-size: 10px;
-          line-height: 10px; } }
-      @media screen and (min-width: 500px) {
-        #order .center-wrapper:last-child .circle {
-          font-size: 12px;
-          line-height: 12px; } }
-      @media screen and (min-width: 768px) {
-        #order .center-wrapper:last-child .circle {
-          font-size: 12px;
-          line-height: 12px; } }
-      @media screen and (min-width: 1024px) {
-        #order .center-wrapper:last-child .circle {
-          font-size: 12px;
-          line-height: 12px; } }
-      @media screen and (min-width: 320) {
-        #order .center-wrapper:last-child .circle {
-          margin: 14px; } }
-      @media screen and (min-width: 500px) {
-        #order .center-wrapper:last-child .circle {
-          margin: 16px; } }
-      @media screen and (min-width: 768px) {
-        #order .center-wrapper:last-child .circle {
-          margin: 18px; } }
-      @media screen and (min-width: 1024px) {
-        #order .center-wrapper:last-child .circle {
-          margin: 20px; } }
-      @media screen and (min-width: 320) {
-        #order .center-wrapper:last-child .circle {
-          padding: 6px; } }
-      @media screen and (min-width: 500px) {
-        #order .center-wrapper:last-child .circle {
-          padding: 6px; } }
-      @media screen and (min-width: 768px) {
-        #order .center-wrapper:last-child .circle {
-          padding: 6px; } }
-      @media screen and (min-width: 1024px) {
-        #order .center-wrapper:last-child .circle {
-          padding: 6px; } }
-    #order .center-wrapper:last-child p {
-      color: #fdfdfd;
-      white-space: nowrap; }
-      #order .center-wrapper:last-child p span {
-        font-weight: 900; }
-
-#delivery {
-  background: #fdfdfd; }
-  #delivery .center-wrapper {
-    max-width: 1000px;
+#delivery-option-section {
+  position: relative; }
+  #delivery-option-section::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #141414;
+    z-index: -1; }
+  #delivery-option-section .center-wrapper {
     display: flex;
     flex-direction: column;
-    align-items: center; }
-  #delivery .title {
-    color: #030406;
-    font-size: 50px;
-    line-height: 50px;
-    margin-bottom: 14px; }
-    @media screen and (min-width: 320) {
-      #delivery .title {
-        font-size: 50px;
-        line-height: 50px; } }
-    @media screen and (min-width: 500px) {
-      #delivery .title {
-        font-size: 60px;
-        line-height: 60px; } }
-    @media screen and (min-width: 768px) {
-      #delivery .title {
-        font-size: 70px;
-        line-height: 70px; } }
-    @media screen and (min-width: 1024px) {
-      #delivery .title {
-        font-size: 80px;
-        line-height: 80px; } }
-    @media screen and (min-width: 320) {
-      #delivery .title {
-        margin-bottom: 14px; } }
-    @media screen and (min-width: 500px) {
-      #delivery .title {
-        margin-bottom: 16px; } }
-    @media screen and (min-width: 768px) {
-      #delivery .title {
-        margin-bottom: 18px; } }
-    @media screen and (min-width: 1024px) {
-      #delivery .title {
-        margin-bottom: 20px; } }
-  #delivery .cta {
-    color: #fe8600;
-    background: #030406; }
-    #delivery .cta:hover {
-      color: #030406;
-      background: #fe8600; }
+    align-items: center;
+    padding: calc(32px + (96 - 32) * ((100vw - 300px) / (1600 - 300))) calc(24px + (48 - 24) * ((100vw - 300px) / (1600 - 300))); }
+    #delivery-option-section .center-wrapper .grid-wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      grid-gap: calc(30px + (200 - 30) * ((100vw - 300px) / (1600 - 300))); }
+      #delivery-option-section .center-wrapper .grid-wrapper .item-wrapper {
+        max-width: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; }
+        #delivery-option-section .center-wrapper .grid-wrapper .item-wrapper #img-1, #delivery-option-section .center-wrapper .grid-wrapper .item-wrapper #img-2, #delivery-option-section .center-wrapper .grid-wrapper .item-wrapper #img-3 {
+          width: 100%;
+          height: 100px;
+          margin-bottom: calc(8px + (32 - 8) * ((100vw - 300px) / (1600 - 300))); }
+        #delivery-option-section .center-wrapper .grid-wrapper .item-wrapper #img-1 {
+          background: url("../img/homepage/delivery-options/foodpanda-logo.png") 50% 50%/contain no-repeat; }
+        #delivery-option-section .center-wrapper .grid-wrapper .item-wrapper #img-2 {
+          background: url("../img/homepage/delivery-options/grabfood-logo.png") 50% 50%/contain no-repeat; }
+        #delivery-option-section .center-wrapper .grid-wrapper .item-wrapper #img-3 {
+          background: url("../img/homepage/delivery-options/yangond2d-logo.png") 50% 50%/contain no-repeat; }
+        #delivery-option-section .center-wrapper .grid-wrapper .item-wrapper .cta-sml {
+          background: #fe8600;
+          color: #030406; }
+          #delivery-option-section .center-wrapper .grid-wrapper .item-wrapper .cta-sml:hover {
+            background: #ffffff;
+            color: #030406; }
+
+#order-pickup-section {
+  padding: 0 !important;
+  position: relative; }
+  #order-pickup-section::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #141414;
+    z-index: -1; }
+  #order-pickup-section .grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+    #order-pickup-section .grid-wrapper .item-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: calc(32px + (96 - 32) * ((100vw - 300px) / (1600 - 300))); }
+      #order-pickup-section .grid-wrapper .item-wrapper h2, #order-pickup-section .grid-wrapper .item-wrapper .superscript, #order-pickup-section .grid-wrapper .item-wrapper .caption {
+        color: #030406;
+        text-shadow: none;
+        text-align: center; }
+      #order-pickup-section .grid-wrapper .item-wrapper h2 {
+        white-space: nowrap; }
+      #order-pickup-section .grid-wrapper .item-wrapper .superscript {
+        font-family: "Oswald", sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: calc(12px + (16 - 12) * ((100vw - 300px) / (1600 - 300)));
+        line-height: calc(12px + (16 - 12) * ((100vw - 300px) / (1600 - 300))); }
+      #order-pickup-section .grid-wrapper .item-wrapper .caption {
+        margin-bottom: calc(24px + (48 - 24) * ((100vw - 300px) / (1600 - 300))); }
+    #order-pickup-section .grid-wrapper .item-wrapper {
+      position: relative; }
+      #order-pickup-section .grid-wrapper .item-wrapper::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: #ffffff;
+        z-index: -1; }
+      #order-pickup-section .grid-wrapper .item-wrapper .center-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        max-width: 0; }
+        #order-pickup-section .grid-wrapper .item-wrapper .center-wrapper .cta-sml {
+          background: #3b5998;
+          color: #ffffff; }
+          #order-pickup-section .grid-wrapper .item-wrapper .center-wrapper .cta-sml:hover {
+            background: #030406;
+            color: #ffffff; }
+        #order-pickup-section .grid-wrapper .item-wrapper .center-wrapper .or {
+          font-weight: 700;
+          background: #030406;
+          border-radius: 50%;
+          padding: calc(6px + (6 - 6) * ((100vw - 300px) / (1600 - 300)));
+          margin: calc(8px + (32 - 8) * ((100vw - 300px) / (1600 - 300)));
+          font-size: calc(8px + (10 - 8) * ((100vw - 300px) / (1600 - 300)));
+          line-height: calc(8px + (10 - 8) * ((100vw - 300px) / (1600 - 300))); }
+        #order-pickup-section .grid-wrapper .item-wrapper .center-wrapper .contact-number {
+          font-weight: 900;
+          color: #fe8600;
+          white-space: nowrap;
+          text-transform: uppercase;
+          position: relative; }
+          #order-pickup-section .grid-wrapper .item-wrapper .center-wrapper .contact-number::before {
+            content: "";
+            position: absolute;
+            width: 120%;
+            height: 200%;
+            left: -5%;
+            top: -50%;
+            background: url("../img/brush-effects/brush-effect-01.png") 50% 50%/contain no-repeat;
+            z-index: -1; }
+          #order-pickup-section .grid-wrapper .item-wrapper .center-wrapper .contact-number::after {
+            content: "CALL";
+            position: absolute;
+            color: #030406;
+            font-weight: 400;
+            left: 0;
+            top: -80%;
+            font-size: calc(8px + (10 - 8) * ((100vw - 300px) / (1600 - 300)));
+            line-height: calc(8px + (10 - 8) * ((100vw - 300px) / (1600 - 300))); }
+    #order-pickup-section .grid-wrapper .item-wrapper:last-child {
+      position: relative; }
+      #order-pickup-section .grid-wrapper .item-wrapper:last-child::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: url("../img/homepage/patterned-background.jpg") 50% 50%/cover no-repeat; }
+      #order-pickup-section .grid-wrapper .item-wrapper:last-child .cta-sml {
+        background: #030406;
+        color: #ffffff; }
+        #order-pickup-section .grid-wrapper .item-wrapper:last-child .cta-sml:hover {
+          background: #ffffff;
+          color: #030406; }
 
 /* Smartphones */
-@media only screen and (max-width: 600px) {
-  #delivery .center-wrapper {
-    align-items: flex-start; } }
+@media only screen and (max-width: 728px) {
+  #delivery-option-section .center-wrapper .grid-wrapper {
+    grid-template-columns: repeat(1, auto); }
+  #order-pickup-section .grid-wrapper {
+    grid-template-columns: repeat(1, auto); }
+    #order-pickup-section .grid-wrapper .center-wrapper {
+      flex-direction: column; } }

@@ -18,30 +18,37 @@
 <body>
 
     <div id="desktop-nav">
-        <a href="index.html" class="logo">
-            <div class="logo-img"></div>
-        </a>
-
-        <ul class="nav-items">
-            <li class="nav-item">
-                <a href="menu.html" class="underline animated">menu</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="underline animated">locations</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="underline animated">sign up</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="underline animated">gallery</a>
-            </li>
-            <li class="nav-item">
-                <p>+95 9 755 083653</p>
-            </li>
-        </ul>
+        <div class="center-wrapper">
+            <div class="nav-items">
+                <a href="index.html" class="logo"></a>
+                <ul class="nav-ul">
+                    <li class="nav-li">
+                        <a href="index.html" class="underline animated active">home</a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="menupage.html" class="underline animated">menu</a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="#" class="underline animated">locations</a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="#" class="underline animated">events</a>
+                    </li>
+                </ul>
+            </div>
+            <p class="nav-contact-number">+95 9 755 083653</p>
+        </div>
     </div>
 
-    <div id="mobile-nav">
+    <div id="hamburger">
+        <div class="hamburger hamburger--spin">
+            <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div id="mobile-nav">
         <div class="center-wrapper">
             <a href="index.html" class="logo">
                 <div class="logo-img"></div>
@@ -49,7 +56,7 @@
     
             <ul class="nav-items">
                 <li class="nav-item">
-                    <a href="menu.html" class="underline animated">menu</a>
+                    <a href="menupage.html" class="underline animated">menu</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="underline animated">locations</a>
@@ -88,162 +95,152 @@
             <div class="logo-img"></div>
         </a>
         <h3 class="nav-title">DD CHICKEN</h3>
-    </div>
+    </div> -->
 
-    <div id='hamburger'>
-        <div class='hamburger hamburger--spin'>
-             
-            <div class='hamburger-box'>
-                <div class='hamburger-inner'></div>
+    
+    <!-- HOMEPAGE -->
+    <main id="homepage">
+
+        <!-- HEADER SECTION -->
+
+        <section id="hero-section">
+            <div class="center-wrapper fl-c ai-fs">
+                <h1>dd chicken <br>delivery</h1>
+                <a href="menupage.html" class="cta-lrg animated">view menu<i class="fas fa-chevron-right"></i></a>
             </div>
-        </div>
-    </div>
+        </section>
 
-    <main class="center-wrapper" id="homepage">
+         <!-- ORDER & PICKUP SECTION -->
 
-        <!-- HERO SECTION -->
-        <section id="hero" class="hero">
+         <section id="order-pickup-section">
 
-            <div class="center-wrapper">
-                <h1 class="title">dd chicken <br>delivery</h1>
-                <a href="menu.html" class="cta animated">view menu<i class="fas fa-chevron-right"></i></a>
+            <div class="grid-wrapper">
+                <div class="item-wrapper" id="grid-item-01">
+                    <p class="superscript">Straight from the grill.</p>
+                    <h2>Direct Order.</h2>
+                    <p class="caption">Message us via our Facebook page or give us a call.</p> 
+                    <div class="center-wrapper">
+                        <a href="#" class="cta-sml animated">order now<i class="fab fa-facebook-messenger"></i></a>
+                        <p class="or">or </p>
+                        <p class="contact-number">+95 9 755 083653</p>
+                    </div>
+                </div>
+
+                <div class="item-wrapper" id="grid-item-02">
+                    <p class="superscript">Available for</p>
+                    <h2>Pick Up.</h2>
+                    <p class="caption">With new shops opening, You can get food fast and flaming hot.</p> 
+                    <a href="#" class="cta-sml animated">see locations<i class="fas fa-search-location"></i></a>
+                </div>
             </div>
 
         </section>
 
-        <!-- FEATURED SECTION -->
-        <section id="featured">
+        <!-- DELIVERY OPTIONS SECTION -->
 
-            <h2 class="title">What's <span>Cookin?</span></h2>
-
-            <div class="item-grid center-wrapper">
-                <div class="item" id="item-1">
-                    <div class="image" id="image-box-1"></div>
-                    <a href="#" class="cta animated">open the grill<i class="fas fa-chevron-right"></i></a>
-                </div>
-
-                <div class="item" id="item-2">
-                    <div class="image" id="image-box-2"></div>
-                    <a href="#" class="cta animated">the sandwhich<i class="fas fa-chevron-right"></i></a>
-                </div>
-
-                <div class="item" id="item-3">
-                    <div class="image" id="image-box-3"></div>
-                    <a href="#" class="cta animated">sauces and more<i class="fas fa-chevron-right"></i></a>
-                </div>
-            </div>  
-
-        </section>
-
-        <!-- ORDER SECTION -->
-        <section id="order">
-
+        <section id="delivery-option-section">
             <div class="center-wrapper">
-                <h2 class="title fc-w">stay home. <span class="fc-y">stay safe.</h2>
-                <h2 class="title fc-o">we deliver.</h2>
-                
-            </div>
+                <h2><span>Stay Home.</span> <span class="fc-ye-0">Stay Safe.</span> <br><span class="fc-or-0">We Deliver.</span></h2>
+                <p class="caption">Choose from the many delivery options available.</p>
 
-            <div class="center-wrapper">
-                <a href="#" class="cta animated">order now<i class="fab fa-facebook-messenger"></i></a> 
-                <p class='circle'>or </p>
-                <p>call <span>+95 9 755 083653</span></p>
-            </div>
-
-        </section>
-
-        <!-- SPLIT SECTION -->
-        <section id="split">
-
-            <div class="split-grid center-wrapper">
-                <div class="split-box" id="delivery-box">
-                    <h2 class="title">Delivery Locations</h2>
-                    <p class="detail">Reaching out. Ready to be delivered right at your doorstep.</p>
-
-                    <a href="#" class="cta animated" id="we-deliver-cta">find location<i class="fas fa-chevron-right"></i></a>
-                </div>
-
-                <div class="split-box" id="signup-box">
-                    <h2 class="title">Oh yes it's free</h2>
-                    <p class="detail">Get the chance to be the first one to taste any new meal fresh from the grill.</p>
-                    
-                    <a href="#" class="cta animated" id="sign-up-cta">SIGN UP NOW<i class="fas fa-chevron-right"></i></a>
-                </div>
-                
-            </div>
-
-        </section>
-
-        <!-- FACEBOOK SECTION -->
-        <section id="facebook">
-            <div class="center-wrapper">
-                <h2 class="title">news, updates and more...</h2>
-                <p class="detail">Connect via Facebook and get to  know more about our newest menu items and latest offers.</p>
-                <a href="#" class="cta animated">ddchickendelivery<i class="far fa-thumbs-up"></i></a>
+                <div class="grid-wrapper">
+                    <div class="item-wrapper">
+                        <div id="img-1"></div>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo officiis sit fugit.</p>
+                        <a href="#" class="cta-sml animated">order now<i class="fas fa-chevron-right"></i></a>
+                    </div>
+                    <div class="item-wrapper">
+                        <div id="img-2"></div>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo officiis sit fugit.</p>
+                        <a href="#" class="cta-sml animated">order now<i class="fas fa-chevron-right"></i></a>
+                    </div>
+                    <div class="item-wrapper">
+                        <div id="img-3"></div>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo officiis sit fugit.</p>
+                        <a href="#" class="cta-sml animated">order now<i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div> 
             </div>
         </section>
 
-        <!-- GALLERY SECTION -->
-        <section id="gallery">
-            <div class="image long-animated"></div>
+       
 
+        <!-- EVENTS SECTION -->
+
+        <section id="events-section">
             <div class="center-wrapper">
-                <h2 class="title animated">hungry yet? <span>check our food</span>.</h2>
+                <h2>pop ups &amp; events</h2>
+                <p class="caption">Delectable dishes await you. See you there.</p> 
+                <a href="#" class="cta-sml animated">view all<i class="fas fa-chevron-right"></i></a>
             </div>
+        </section>
 
-            <a href="#" class="cta cover animated">
-                open gallery
-            </a>
+        <!-- SUBSCRIPTION SECTION -->
+
+        <section id="subscribe-section">
+            <div class="center-wrapper">
+                <h2>newsletter</h2>
+                <p class="caption">Free meals, news &amp; updates with our latest offers.</p> 
+                <form action="" class="center-wrapper">
+                    <input type="text" value="Fullname">
+                    <input type="text" value="Email">
+                    <a href="#" class="cta-sml animated">subscribe<i class="fas fa-chevron-right"></i></a>
+                </form>
+            </div>
         </section>
 
     </main>
 
-     <!-- FOOTER SECTION -->
-     <footer id="footer">
+    <!--FOOTER -->
+
+    <footer>
         <div class="center-wrapper">
             <div class="wrapper">
-                <a href="index.html" class="logo">
-                    <div class="logo-img"></div>
-                </a>
-                <h2 class="title">DD CHICKEN DELIVERY.</h2>
-                <p class="detail">Myanmar's first charcoal roasted chicken.</p>
-            </div>
-            <div class="wrapper">
-                <h2 class="title">DD Chicken is Yangon's go-to delivery  food service for fresh, roasted charcoal grilled chicken!</h2>
-                <p class="detail">Our assortment of unique sauces delicious sandwiches and healthy side dishes make DD Chicken a must-have comfort food option. Available in the Yangon area.</p>
+                <h2>DDChicken Delivery</h2>
+                <p class="caption">Myanmar's first Charcoal Roasted Chicken.</p> 
 
-                <div class="social">
-                    <div class="wrapper">
-                        <p>Start a conversation.</p>
-                        <a href="" class="animated">m.me/ddchickendelivery</a>
-                    </div>
-
-                    <div class="wrapper">
-                        <p>Order Now.</p>
-                        <p>+95 9 755 083653</p>
-                    </div>
-
-                    <div class="wrapper">
-                        <a href="#" class="social-cta animated">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="social-cta animated">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#" class="social-cta animated">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="social-cta animated">
-                            <i class="fas fa-envelope-open-text"></i>
-                        </a>
-                    </div>
+                <div class="wrapper">
+                    <p class="highlight">Start a conversation</p>
+                    <div class="line"></div>
                 </div>
-                <p class="copyright">&copy 2020 DDCHICKEN. All Rights Reserved.</p>
+
+                <div class="nav-wrapper">
+                    <ul class="info-ul">
+                        <li class="info-li">
+                            <p><i class="fas fa-phone"></i>+95 9 755 083653</p>
+                        </li>
+                        <li class="info-li">
+                            <p><i class="fab fa-facebook-messenger"></i>m.me/ddchickendelivery</p>
+                        </li>
+                        <li class="info-li">
+                            <p><i class="fas fa-home"></i>20 Maharlika Road Yangon, Myanmar</p>
+                        </li>
+                    </ul>
+
+                    <ul class="social-ul">
+                        <li class="social-li">
+                            <a href="#" class="social-button">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="social-li">
+                            <a href="#" class="social-button">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="social-li">
+                            <a href="#" class="social-button">
+                                <i class="fas fa-envelope-open-text"></i>
+                            </a>
+                        </li>
+                    </ul> 
+                </div>
             </div>
         </div>
-
+        <p class="copyright">&copy 2020 DDCHICKEN. All Rights Reserved.</p>
     </footer>
 
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/ScrollTrigger.min.js"></script>
