@@ -46,18 +46,9 @@
 #hero-section {
   padding: 0;
   overflow: hidden;
-  position: relative; }
-  #hero-section::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: #030406;
-    z-index: -1; }
+  background: url("../img/menupage/wallpaper/flames.jpg") 50% 50%/cover no-repeat;
+  z-index: -1; }
   #hero-section .center-wrapper {
-    margin-top: calc(100px + (160 - 100) * ((100vw - 300px) / (1600 - 300)));
     padding: calc(32px + (96 - 32) * ((100vw - 300px) / (1600 - 300))) calc(24px + (48 - 24) * ((100vw - 300px) / (1600 - 300)));
     display: flex;
     flex-direction: column;
@@ -85,9 +76,6 @@
     flex-direction: column;
     align-items: flex-start;
     padding: calc(32px + (96 - 32) * ((100vw - 300px) / (1600 - 300))) calc(24px + (48 - 24) * ((100vw - 300px) / (1600 - 300))); }
-    #menu-items-section .center-wrapper h2 {
-      color: #ffffff;
-      margin-bottom: calc(24px + (48 - 24) * ((100vw - 300px) / (1600 - 300))); }
     #menu-items-section .center-wrapper .grid-wrapper {
       display: grid;
       grid-template-columns: repeat(3, auto);

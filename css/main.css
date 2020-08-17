@@ -260,19 +260,9 @@ h2 {
 
 h3 {
   text-align: center;
-  margin-bottom: calc(32px + (96 - 32) * ((100vw - 300px) / (1600 - 300)));
-  font-size: calc(20px + (40 - 20) * ((100vw - 300px) / (1600 - 300)));
-  line-height: calc(20px + (40 - 20) * ((100vw - 300px) / (1600 - 300)));
-  position: relative; }
-  h3::before {
-    content: "";
-    position: absolute;
-    width: 130%;
-    height: 150%;
-    left: -10%;
-    top: -10%;
-    background: url("../img/brush-effects/brush-effect-03.png") 50% 50%/contain no-repeat;
-    z-index: -1; }
+  margin-bottom: calc(24px + (48 - 24) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(32px + (64 - 32) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc(32px + (64 - 32) * ((100vw - 300px) / (1600 - 300))); }
 
 h4 {
   font-family: "Lato", sans-serif;

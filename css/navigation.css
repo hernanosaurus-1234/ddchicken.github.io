@@ -49,13 +49,20 @@
 
 ======================*/
 #desktop-nav {
-  position: absolute;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 99;
-  background: #141414;
-  background: linear-gradient(0deg, rgba(20, 20, 20, 0) 0%, rgba(20, 20, 20, 0.1) 10%, rgba(20, 20, 20, 0.2) 20%, rgba(20, 20, 20, 0.3) 30%, #141414 100%); }
+  position: relative; }
+  #desktop-nav::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #030406;
+    z-index: -1; }
   #desktop-nav .center-wrapper {
     height: calc(100px + (160 - 100) * ((100vw - 300px) / (1600 - 300)));
     max-height: 180px;
