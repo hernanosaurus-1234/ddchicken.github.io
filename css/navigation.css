@@ -1,11 +1,39 @@
 /*
+    Font Style
+*/
+/*
+    Font Sizes
+*/
+/*
+    Navigation Bar
+*/
+/*
+    Call To Action
+*/
+/*
+    Margin & Padding
+*/
+/*
+    Colors
+*/
+/*
+
+    Padding
+
+*/
+/*
+
+    Margin
+
+*/
+/*
 
     Colors
 
 */
 /*
 
-    Font Properties
+    Fontsizes
 
 */
 /*
@@ -53,32 +81,25 @@
   top: 0;
   left: 0;
   z-index: 99;
-  position: relative; }
-  #desktop-nav::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: #030406;
-    z-index: -1; }
-  #desktop-nav .center-wrapper {
+  background: #141414;
+  background: linear-gradient(0deg, rgba(20, 20, 20, 0) 0%, rgba(20, 20, 20, 0.1) 10%, rgba(20, 20, 20, 0.2) 20%, rgba(20, 20, 20, 0.3) 30%, #141414 100%);
+  position: fixed; }
+  #desktop-nav .center {
     height: calc(100px + (160 - 100) * ((100vw - 300px) / (1600 - 300)));
     max-height: 180px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 calc(24px + (48 - 24) * ((100vw - 300px) / (1600 - 300))); }
-    #desktop-nav .center-wrapper .nav-items {
+    #desktop-nav .center .nav-items {
       display: flex;
       align-items: center; }
-      #desktop-nav .center-wrapper .nav-items .logo {
+      #desktop-nav .center .nav-items .logo {
         width: calc(80px + (140 - 80) * ((100vw - 300px) / (1600 - 300)));
         height: calc(80px + (140 - 80) * ((100vw - 300px) / (1600 - 300)));
-        margin-right: calc(8px + (32 - 8) * ((100vw - 300px) / (1600 - 300)));
+        margin-right: calc(16px + (32 - 16) * ((100vw - 300px) / (1600 - 300)));
         position: relative; }
-        #desktop-nav .center-wrapper .nav-items .logo::before {
+        #desktop-nav .center .nav-items .logo::before {
           content: "";
           position: absolute;
           width: 100%;
@@ -87,49 +108,50 @@
           left: 0;
           background: url("../img/main-logo.png") 50% 50%/contain no-repeat;
           z-index: -1; }
-      #desktop-nav .center-wrapper .nav-items .nav-ul {
+      #desktop-nav .center .nav-items .nav-ul {
         display: flex;
         align-items: center; }
-        #desktop-nav .center-wrapper .nav-items .nav-ul .nav-li {
+        #desktop-nav .center .nav-items .nav-ul .nav-li {
           padding: 0 calc(8px + (16 - 8) * ((100vw - 300px) / (1600 - 300))); }
-          #desktop-nav .center-wrapper .nav-items .nav-ul .nav-li a {
-            font-size: calc(12px + (16 - 12) * ((100vw - 300px) / (1600 - 300)));
+          #desktop-nav .center .nav-items .nav-ul .nav-li a {
+            font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (1600 - 300)));
             color: #ffffff;
             font-weight: 300; }
-            #desktop-nav .center-wrapper .nav-items .nav-ul .nav-li a::before {
+            #desktop-nav .center .nav-items .nav-ul .nav-li a::before {
               background: #fe8600; }
-    #desktop-nav .center-wrapper .nav-contact-number {
-      font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
+    #desktop-nav .center .order-now {
+      font-family: "Lato", sans-serif;
+      font-size: calc(16px + (22 - 16) * ((100vw - 300px) / (1600 - 300)));
       font-weight: 900;
       color: #030406;
       white-space: nowrap;
       text-transform: uppercase;
       text-shadow: none;
       position: relative; }
-      #desktop-nav .center-wrapper .nav-contact-number::before {
+      #desktop-nav .center .order-now::before {
         content: "";
         position: absolute;
         width: 120%;
-        height: 200%;
-        left: -5%;
-        top: -50%;
-        background: url("../img/brush-effects/brush-effect-02.png") 50% 50%/contain no-repeat;
+        height: 120%;
+        left: -6%;
+        top: -10%;
+        background: url("../img/brush-effects/brush-effect-03.png") 50% 50%/cover no-repeat;
         z-index: -1; }
-      #desktop-nav .center-wrapper .nav-contact-number::after {
+      #desktop-nav .center .order-now::after {
         content: "ORDER NOW";
         position: absolute;
         color: #ffffff;
         font-weight: 400;
         left: 0;
         top: -80%;
-        font-size: calc(8px + (10 - 8) * ((100vw - 300px) / (1600 - 300)));
-        line-height: calc(8px + (10 - 8) * ((100vw - 300px) / (1600 - 300))); }
+        font-size: calc(10px + (12 - 10) * ((100vw - 300px) / (1600 - 300)));
+        line-height: normal; }
 
 #hamburger {
   position: fixed;
   display: none;
   top: 0;
-  right: 0;
+  left: 0;
   z-index: 100; }
 
 /* width */
@@ -138,7 +160,7 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #141414; }
+  background: #030406; }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
@@ -150,7 +172,7 @@
 
 /* Tablet */
 @media (max-width: 768px) {
-  #desktop-nav {
+  #desktop-nav, .order-now {
     display: none; }
   #hamburger {
     display: block; } }
