@@ -209,7 +209,7 @@ const menu = (function() {
 				$('#hamburger .hamburger').addClass('is-active');
 				$('#hamburger').addClass('menu-active');
 
-				// $('body').addClass('stop-scrolling');
+				$('body').addClass('stop-scrolling');
 			} else {
 				isOpen = false;
 
@@ -222,7 +222,7 @@ const menu = (function() {
 				$('#hamburger .hamburger').removeClass('is-active');
 				$('#hamburger').removeClass('menu-active');
 
-				// $('body').removeClass('stop-scrolling');
+				$('body').removeClass('stop-scrolling');
 			}
 		});
 	}
