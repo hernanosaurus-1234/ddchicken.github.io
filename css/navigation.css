@@ -150,7 +150,7 @@
 #mobile-nav {
   position: fixed;
   height: 100vh;
-  width: 70%;
+  width: 100%;
   top: 0;
   left: -100%;
   z-index: 99;
@@ -269,7 +269,6 @@
   #hamburger {
     display: block; }
   #mobile-nav {
-    width: 50%;
     display: flex;
     overflow-y: scroll;
     align-items: flex-start; } }
