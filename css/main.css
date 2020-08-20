@@ -174,8 +174,8 @@ h1 {
 
 h2 {
   margin-bottom: calc(8px + (16 - 8) * ((100vw - 300px) / (1600 - 300)));
-  font-size: calc(35px + (70 - 35) * ((100vw - 300px) / (1600 - 300)));
-  line-height: calc(35px + (70 - 35) * ((100vw - 300px) / (1600 - 300))); }
+  font-size: calc(45px + (70 - 45) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc(45px + (70 - 45) * ((100vw - 300px) / (1600 - 300))); }
 
 .h2-ss {
   font-weight: 900;

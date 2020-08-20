@@ -209,20 +209,20 @@ const menu = (function() {
 				$('#hamburger .hamburger').addClass('is-active');
 				$('#hamburger').addClass('menu-active');
 
-				$('body').addClass('stop-scrolling');
+				// $('body').addClass('stop-scrolling');
 			} else {
 				isOpen = false;
 
 				gsap.to($('#mobile-nav'), {
 					duration : 0.6,
-					left     : '100%',
+					left     : '-100%',
 					ease     : 'expo.out'
 				});
 
 				$('#hamburger .hamburger').removeClass('is-active');
 				$('#hamburger').removeClass('menu-active');
 
-				$('body').removeClass('stop-scrolling');
+				// $('body').removeClass('stop-scrolling');
 			}
 		});
 	}

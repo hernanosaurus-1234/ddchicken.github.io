@@ -233,7 +233,7 @@
       grid-template-columns: repeat(3, auto);
       grid-gap: calc(30px + (200 - 30) * ((100vw - 300px) / (1600 - 300))); }
       #delivery-option-section .center .grid-wrapper .item-wrapper {
-        max-width: 200px;
+        max-width: 240px;
         display: flex;
         flex-direction: column;
         align-items: center;
