@@ -83,7 +83,7 @@
   z-index: 99;
   background: #141414;
   background: linear-gradient(0deg, rgba(20, 20, 20, 0) 0%, rgba(20, 20, 20, 0.1) 10%, rgba(20, 20, 20, 0.2) 20%, rgba(20, 20, 20, 0.3) 30%, #141414 100%);
-  position: fixed; }
+  position: absolute; }
   #desktop-nav .center {
     height: calc(100px + (160 - 100) * ((100vw - 300px) / (1600 - 300)));
     max-height: 180px;

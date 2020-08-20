@@ -88,12 +88,21 @@
     #hero-section .center h1 {
       margin-top: calc(64px + (128 - 64) * ((100vw - 300px) / (1600 - 300)));
       color: #ffffff; }
-    #hero-section .center .cta--large {
-      background: #fe8600;
-      color: #030406; }
-      #hero-section .center .cta--large:hover {
-        background: #ffffff;
-        color: #030406; }
+    #hero-section .center .wrapper {
+      display: flex; }
+      #hero-section .center .wrapper .cta--small {
+        background: #3b5998;
+        color: #ffffff;
+        border: 1px solid #3b5998; }
+        #hero-section .center .wrapper .cta--small:hover {
+          border: 1px solid #ffffff;
+          background: #ffffff;
+          color: #030406; }
+      #hero-section .center .wrapper .cta--transparent {
+        background: transparent;
+        color: #ffffff;
+        border: 1px solid #ffffff;
+        margin-left: calc(8px + (16 - 8) * ((100vw - 300px) / (1600 - 300))); }
 
 #order-pickup-section {
   display: grid;
@@ -319,6 +328,12 @@
 @media only screen and (max-width: 499px) {
   #hero-section .center h1 {
     margin-top: 0; }
+  #hero-section .center .wrapper {
+    flex-direction: column; }
+    #hero-section .center .wrapper .cta--small {
+      margin-bottom: calc(24px + (48 - 24) * ((100vw - 300px) / (1600 - 300))); }
+    #hero-section .center .wrapper .cta--transparent {
+      margin: 0; }
   #order-pickup-section {
     grid-template-columns: repeat(1, auto); }
     #order-pickup-section .center {
