@@ -154,7 +154,7 @@
         padding: 6px;
         font-weight: 700;
         border-radius: 50%;
-        font-size: calc(10px + (12 - 10) * ((100vw - 300px) / (1600 - 300)));
+        font-size: calc(8px + (10 - 8) * ((100vw - 300px) / (1600 - 300)));
         line-height: normal; }
       #order-pickup-section .item-wrapper .center .contact-number {
         font-size: calc(16px + (18 - 16) * ((100vw - 300px) / (1600 - 300)));
@@ -180,7 +180,7 @@
           font-weight: 400;
           left: 0;
           top: -80%;
-          font-size: calc(10px + (12 - 10) * ((100vw - 300px) / (1600 - 300)));
+          font-size: calc(8px + (10 - 8) * ((100vw - 300px) / (1600 - 300)));
           line-height: normal; }
   #order-pickup-section .item-wrapper:last-child {
     position: relative; }
