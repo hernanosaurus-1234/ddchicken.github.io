@@ -182,7 +182,7 @@
             text-align: left;
             margin-bottom: calc(16px + (32 - 16) * ((100vw - 300px) / (1600 - 300)));
             padding: 0 calc(8px + (16 - 8) * ((100vw - 300px) / (1600 - 300)));
-            font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (1600 - 300)));
+            font-size: calc(12px + (16 - 12) * ((100vw - 300px) / (1600 - 300)));
             line-height: normal; }
           #events-section .center .grid-wrapper .item-wrapper .content--wrapper .store--info {
             width: 100%;
