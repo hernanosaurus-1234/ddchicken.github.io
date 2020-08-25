@@ -137,7 +137,7 @@
     #events-section .center .grid-wrapper {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      grid-gap: 50px;
+      grid-gap: 30px;
       margin-bottom: calc(32px + (64 - 32) * ((100vw - 300px) / (1600 - 300))); }
       #events-section .center .grid-wrapper .item-wrapper {
         display: flex;
@@ -196,7 +196,7 @@
               padding: 0;
               white-space: nowrap; }
               #events-section .center .grid-wrapper .item-wrapper .content--wrapper .store--info .contact i, #events-section .center .grid-wrapper .item-wrapper .content--wrapper .store--info .hours i {
-                margin-right: calc(8px + (16 - 8) * ((100vw - 300px) / (1600 - 300))); }
+                margin-right: 6px; }
             #events-section .center .grid-wrapper .item-wrapper .content--wrapper .store--info .contact {
               padding-right: calc(8px + (16 - 8) * ((100vw - 300px) / (1600 - 300)));
               border-right: 1px solid rgba(255, 255, 255, 0.1); }
@@ -353,7 +353,7 @@
           color: #aaaaaa;
           margin-bottom: calc(24px + (48 - 24) * ((100vw - 300px) / (1600 - 300)));
           text-align: center;
-          font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (1600 - 300)));
+          font-size: calc(12px + (14 - 12) * ((100vw - 300px) / (1600 - 300)));
           line-height: normal; }
         #delivery-option-section .center .grid-wrapper .item-wrapper .cta--small {
           background: #fe8600;
@@ -370,7 +370,7 @@
       margin-bottom: calc(24px + (48 - 24) * ((100vw - 300px) / (1600 - 300))); }
     #hero-section .center .wrapper .wrapper .cta--transparent {
       margin: 0; }
-  #menu-items-section .center .grid-wrapper {
+  #events-section .center .grid-wrapper {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
   #order-pickup-section {
     grid-template-columns: repeat(1, auto); }
