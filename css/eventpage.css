@@ -136,7 +136,7 @@
         text-align: left; }
     #events-section .center .grid-wrapper {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
       grid-gap: 50px;
       margin-bottom: calc(32px + (64 - 32) * ((100vw - 300px) / (1600 - 300))); }
       #events-section .center .grid-wrapper .item-wrapper {
@@ -150,7 +150,7 @@
         #events-section .center .grid-wrapper .item-wrapper .item-img {
           width: 100%;
           height: 150px;
-          margin-bottom: calc(8px + (16 - 8) * ((100vw - 300px) / (1600 - 300))); }
+          margin-bottom: calc(16px + (32 - 16) * ((100vw - 300px) / (1600 - 300))); }
         #events-section .center .grid-wrapper .item-wrapper #img-1 {
           background: url("../img/eventpage/1_cafe_event.jpg") 50% 50%/cover no-repeat; }
         #events-section .center .grid-wrapper .item-wrapper #img-2 {
@@ -182,7 +182,7 @@
             text-align: left;
             margin-bottom: calc(16px + (32 - 16) * ((100vw - 300px) / (1600 - 300)));
             padding: 0 calc(8px + (16 - 8) * ((100vw - 300px) / (1600 - 300)));
-            font-size: calc(12px + (14 - 12) * ((100vw - 300px) / (1600 - 300)));
+            font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (1600 - 300)));
             line-height: normal; }
           #events-section .center .grid-wrapper .item-wrapper .content--wrapper .store--info {
             width: 100%;
@@ -201,6 +201,7 @@
               padding-right: calc(8px + (16 - 8) * ((100vw - 300px) / (1600 - 300)));
               border-right: 1px solid rgba(255, 255, 255, 0.1); }
             #events-section .center .grid-wrapper .item-wrapper .content--wrapper .store--info .hours {
+              flex: 2;
               text-align: right;
               padding: 0 calc(8px + (16 - 8) * ((100vw - 300px) / (1600 - 300))); }
 
