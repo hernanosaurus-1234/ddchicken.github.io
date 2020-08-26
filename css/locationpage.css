@@ -141,101 +141,84 @@
             justify-content: space-between; }
             #pickup-section .center .location--wrapper .location--list .locations .store--info i {
               margin-right: 6px; }
+            #pickup-section .center .location--wrapper .location--list .locations .store--info p {
+              font-size: calc(12px + (14 - 12) * ((100vw - 300px) / (1600 - 300))); }
 
-#order-pickup-section {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  grid-gap: 0; }
-  #order-pickup-section .item-wrapper {
+#order-pickup-section .item-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: calc(32px + (64 - 32) * ((100vw - 300px) / (1600 - 300))); }
+  #order-pickup-section .item-wrapper h2, #order-pickup-section .item-wrapper p, #order-pickup-section .item-wrapper .h2-ss {
+    color: #030406;
+    text-shadow: none;
+    text-align: center; }
+  #order-pickup-section .item-wrapper p {
+    margin-bottom: calc(24px + (48 - 24) * ((100vw - 300px) / (1600 - 300))); }
+  #order-pickup-section .item-wrapper .h2-ss {
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 0; }
+
+#order-pickup-section .item-wrapper {
+  position: relative; }
+  #order-pickup-section .item-wrapper::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    z-index: -1; }
+  #order-pickup-section .item-wrapper .center {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    padding: calc(32px + (64 - 32) * ((100vw - 300px) / (1600 - 300))); }
-    #order-pickup-section .item-wrapper h2, #order-pickup-section .item-wrapper p, #order-pickup-section .item-wrapper .h2-ss {
-      color: #030406;
-      text-shadow: none;
-      text-align: center; }
-    #order-pickup-section .item-wrapper p {
-      margin-bottom: calc(24px + (48 - 24) * ((100vw - 300px) / (1600 - 300))); }
-    #order-pickup-section .item-wrapper .h2-ss {
-      font-family: "Oswald", sans-serif;
-      text-transform: uppercase;
-      margin-bottom: 0; }
-  #order-pickup-section .item-wrapper {
-    position: relative; }
-    #order-pickup-section .item-wrapper::before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      background: #ffffff;
-      z-index: -1; }
-    #order-pickup-section .item-wrapper .center {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0;
-      max-width: 0; }
-      #order-pickup-section .item-wrapper .center .cta--small {
-        background: #3b5998;
-        color: #ffffff; }
-        #order-pickup-section .item-wrapper .center .cta--small:hover {
-          background: #030406;
-          color: #ffffff; }
-      #order-pickup-section .item-wrapper .center .or {
-        color: #ffffff;
+    justify-content: center;
+    margin: 0;
+    max-width: 0; }
+    #order-pickup-section .item-wrapper .center .cta--small {
+      background: #3b5998;
+      color: #ffffff; }
+      #order-pickup-section .item-wrapper .center .cta--small:hover {
         background: #030406;
-        margin: calc(16px + (32 - 16) * ((100vw - 300px) / (1600 - 300)));
-        padding: 8px;
-        font-weight: 700;
-        border-radius: 50%;
+        color: #ffffff; }
+    #order-pickup-section .item-wrapper .center .or {
+      color: #ffffff;
+      background: #030406;
+      margin: calc(16px + (32 - 16) * ((100vw - 300px) / (1600 - 300)));
+      padding: 8px;
+      font-weight: 700;
+      border-radius: 50%;
+      font-size: calc(8px + (10 - 8) * ((100vw - 300px) / (1600 - 300)));
+      line-height: normal; }
+    #order-pickup-section .item-wrapper .center .contact-number {
+      font-size: calc(16px + (18 - 16) * ((100vw - 300px) / (1600 - 300)));
+      font-weight: 900;
+      color: #fe8600;
+      margin: 0 calc(8px + (16 - 8) * ((100vw - 300px) / (1600 - 300)));
+      white-space: nowrap;
+      text-transform: uppercase;
+      position: relative; }
+      #order-pickup-section .item-wrapper .center .contact-number::before {
+        content: "";
+        position: absolute;
+        width: 120%;
+        height: 200%;
+        left: -5%;
+        top: -50%;
+        background: url("../img/brush-effects/brush-effect-01.png") 50% 50%/contain no-repeat;
+        z-index: -1; }
+      #order-pickup-section .item-wrapper .center .contact-number::after {
+        content: "CALL";
+        position: absolute;
+        color: #030406;
+        font-weight: 400;
+        left: 0;
+        top: -80%;
         font-size: calc(8px + (10 - 8) * ((100vw - 300px) / (1600 - 300)));
         line-height: normal; }
-      #order-pickup-section .item-wrapper .center .contact-number {
-        font-size: calc(16px + (18 - 16) * ((100vw - 300px) / (1600 - 300)));
-        font-weight: 900;
-        color: #fe8600;
-        margin: 0 calc(8px + (16 - 8) * ((100vw - 300px) / (1600 - 300)));
-        white-space: nowrap;
-        text-transform: uppercase;
-        position: relative; }
-        #order-pickup-section .item-wrapper .center .contact-number::before {
-          content: "";
-          position: absolute;
-          width: 120%;
-          height: 200%;
-          left: -5%;
-          top: -50%;
-          background: url("../img/brush-effects/brush-effect-01.png") 50% 50%/contain no-repeat;
-          z-index: -1; }
-        #order-pickup-section .item-wrapper .center .contact-number::after {
-          content: "CALL";
-          position: absolute;
-          color: #030406;
-          font-weight: 400;
-          left: 0;
-          top: -80%;
-          font-size: calc(8px + (10 - 8) * ((100vw - 300px) / (1600 - 300)));
-          line-height: normal; }
-  #order-pickup-section .item-wrapper:last-child {
-    position: relative; }
-    #order-pickup-section .item-wrapper:last-child::before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      background: url("../img/homepage/patterned-background.jpg") 50% 50%/cover no-repeat; }
-    #order-pickup-section .item-wrapper:last-child .cta--small {
-      background: #030406;
-      color: #ffffff; }
-      #order-pickup-section .item-wrapper:last-child .cta--small:hover {
-        background: #ffffff;
-        color: #030406; }
 
 #delivery-option-section {
   position: relative; }
@@ -309,10 +292,10 @@
       margin: 0; }
   #pickup-section .center .location--wrapper .location--list {
     width: 100%; }
-  #order-pickup-section {
-    grid-template-columns: repeat(1, auto); }
-    #order-pickup-section .center {
+    #pickup-section .center .location--wrapper .location--list .locations .store--info {
       flex-direction: column; }
+  #order-pickup-section .center {
+    flex-direction: column; }
   #delivery-option-section .center .grid-wrapper {
     grid-template-columns: repeat(1, auto);
     grid-gap: 64px; }
@@ -324,8 +307,6 @@
 @media only screen and (min-width: 500px) and (max-width: 728px) {
   #pickup-section .center .location--wrapper .location--list {
     width: 100%; }
-  #order-pickup-section {
-    grid-template-columns: repeat(1, auto); }
   #delivery-option-section .center .grid-wrapper {
     grid-template-columns: repeat(1, auto);
     grid-gap: 64px; }
@@ -335,6 +316,4 @@
 /* Smartphones */
 @media only screen and (min-width: 729px) and (max-width: 860px) {
   #pickup-section .center .location--wrapper .location--list {
-    width: 70%; }
-  #order-pickup-section {
-    grid-template-columns: repeat(1, auto); } }
+    width: 70%; } }
