@@ -239,9 +239,19 @@
             font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (1600 - 300)));
             line-height: normal; }
           #menu-items-section .center .grid-wrapper .item-wrapper .content--wrapper .price {
-            color: #ffffff;
+            color: #030406;
             margin-bottom: 0;
-            font-weight: 900; }
+            font-weight: 900;
+            position: relative; }
+            #menu-items-section .center .grid-wrapper .item-wrapper .content--wrapper .price::before {
+              content: "";
+              position: absolute;
+              width: 200%;
+              height: 200%;
+              left: -10%;
+              top: -50%;
+              background: url("../img/brush-effects/brush-effect-02.png") 50% 50%/contain no-repeat;
+              z-index: -1; }
 
 #order-pickup-section {
   display: grid;
@@ -433,5 +443,8 @@
 
 /* Smartphones */
 @media only screen and (min-width: 729px) and (max-width: 860px) {
+  #menu-items-section .center .grid-wrapper {
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 30px; }
   #order-pickup-section {
     grid-template-columns: repeat(1, auto); } }
