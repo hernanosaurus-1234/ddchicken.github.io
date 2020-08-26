@@ -18,26 +18,6 @@
 */
 /*
 
-    Padding
-
-*/
-/*
-
-    Margin
-
-*/
-/*
-
-    Colors
-
-*/
-/*
-
-    Fontsizes
-
-*/
-/*
-
     breakpoints
 
 */
@@ -72,7 +52,7 @@
 
 */
 #hero-section {
-  background: url("../img/menupage/background.jpg") 50% 50%/cover no-repeat;
+  background: url("../img/locationpage/background.jpg") 50% 50%/cover no-repeat;
   z-index: -1; }
   #hero-section .center {
     max-width: 1200px;
@@ -107,9 +87,9 @@
           border: 1px solid #ffffff;
           margin-left: calc(8px + (16 - 8) * ((100vw - 300px) / (1600 - 300))); }
 
-#menu-items-section {
+#pickup-section {
   position: relative; }
-  #menu-items-section::before {
+  #pickup-section::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -118,88 +98,49 @@
     left: 0;
     background: #141414;
     z-index: -1; }
-  #menu-items-section .center {
+  #pickup-section .center {
     display: flex;
-    flex-direction: column;
     padding: calc(32px + (64 - 32) * ((100vw - 300px) / (1600 - 300))); }
-    #menu-items-section .center .wrapper {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      margin-bottom: calc(24px + (48 - 24) * ((100vw - 300px) / (1600 - 300))); }
-      #menu-items-section .center .wrapper h3 {
-        color: #ffffff;
-        margin-bottom: calc(8px + (16 - 8) * ((100vw - 300px) / (1600 - 300))); }
-      #menu-items-section .center .wrapper p {
-        color: #aaaaaa;
-        font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (1600 - 300)));
-        text-align: left; }
-    #menu-items-section .center .grid-wrapper {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      grid-gap: 50px;
-      margin-bottom: calc(32px + (64 - 32) * ((100vw - 300px) / (1600 - 300))); }
-      #menu-items-section .center .grid-wrapper .item-wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        border: 1px solid rgba(255, 255, 255, 0.1); }
-        #menu-items-section .center .grid-wrapper .item-wrapper .item-img {
-          width: 100%;
-          height: 150px;
-          margin-bottom: calc(8px + (16 - 8) * ((100vw - 300px) / (1600 - 300))); }
-        #menu-items-section .center .grid-wrapper .item-wrapper #img-1 {
-          background: url("../img/locationpage/1_cafe_event.jpg") 50% 50%/cover no-repeat; }
-        #menu-items-section .center .grid-wrapper .item-wrapper #img-2 {
-          background: url("../img/locationpage/2_bar_event.jpg") 50% 50%/cover no-repeat; }
-        #menu-items-section .center .grid-wrapper .item-wrapper #img-3 {
-          background: url("../img/locationpage/3_outdoor_event.jpg") 50% 50%/cover no-repeat; }
-        #menu-items-section .center .grid-wrapper .item-wrapper #img-4 {
-          background: url("../img/locationpage/4_indoor_event.jpg") 50% 50%/cover no-repeat; }
-        #menu-items-section .center .grid-wrapper .item-wrapper #img-5 {
-          background: url("../img/locationpage/5_indoor_event.jpg") 50% 50%/cover no-repeat; }
-        #menu-items-section .center .grid-wrapper .item-wrapper #img-6 {
-          background: url("../img/locationpage/6_indoor_event.jpg") 50% 50%/cover no-repeat; }
-        #menu-items-section .center .grid-wrapper .item-wrapper .content--wrapper {
+    #pickup-section .center .location--wrapper {
+      width: 100%;
+      height: 500px;
+      position: relative; }
+      #pickup-section .center .location--wrapper::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: url("../img/locationpage/location-background.jpg") 50% 50%/cover no-repeat;
+        z-index: -1; }
+      #pickup-section .center .location--wrapper .location--list {
+        position: absolute;
+        width: 50%;
+        height: 500px;
+        background: rgba(0, 0, 0, 0.8);
+        overflow-y: scroll; }
+        #pickup-section .center .location--wrapper .location--list .locations {
           display: flex;
           flex-direction: column;
           align-items: flex-start;
-          width: 100%; }
-          #menu-items-section .center .grid-wrapper .item-wrapper .content--wrapper h4 {
-            font-family: "Lato", sans-serif;
+          margin: calc(16px + (32 - 16) * ((100vw - 300px) / (1600 - 300)));
+          border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+          #pickup-section .center .location--wrapper .location--list .locations h3 {
             color: #ffffff;
-            padding: 0 calc(8px + (16 - 8) * ((100vw - 300px) / (1600 - 300)));
-            margin-bottom: 6px; }
-          #menu-items-section .center .grid-wrapper .item-wrapper .content--wrapper .date {
+            margin-bottom: calc(16px + (32 - 16) * ((100vw - 300px) / (1600 - 300))); }
+          #pickup-section .center .location--wrapper .location--list .locations p {
             color: #ffffff;
+            font-size: calc(12px + (16 - 12) * ((100vw - 300px) / (1600 - 300)));
             margin-bottom: calc(16px + (32 - 16) * ((100vw - 300px) / (1600 - 300)));
-            padding: 0 calc(8px + (16 - 8) * ((100vw - 300px) / (1600 - 300))); }
-          #menu-items-section .center .grid-wrapper .item-wrapper .content--wrapper p {
-            color: #aaaaaa;
-            text-align: left;
-            margin-bottom: calc(16px + (32 - 16) * ((100vw - 300px) / (1600 - 300)));
-            padding: 0 calc(8px + (16 - 8) * ((100vw - 300px) / (1600 - 300)));
-            font-size: calc(12px + (14 - 12) * ((100vw - 300px) / (1600 - 300)));
-            line-height: normal; }
-          #menu-items-section .center .grid-wrapper .item-wrapper .content--wrapper .store--info {
+            text-align: left; }
+          #pickup-section .center .location--wrapper .location--list .locations .store--info {
             width: 100%;
             display: flex;
-            justify-content: space-between;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            padding: calc(8px + (16 - 8) * ((100vw - 300px) / (1600 - 300))); }
-            #menu-items-section .center .grid-wrapper .item-wrapper .content--wrapper .store--info .contact, #menu-items-section .center .grid-wrapper .item-wrapper .content--wrapper .store--info .hours {
-              flex: 1;
-              margin: 0;
-              padding: 0;
-              white-space: nowrap; }
-              #menu-items-section .center .grid-wrapper .item-wrapper .content--wrapper .store--info .contact i, #menu-items-section .center .grid-wrapper .item-wrapper .content--wrapper .store--info .hours i {
-                margin-right: calc(8px + (16 - 8) * ((100vw - 300px) / (1600 - 300))); }
-            #menu-items-section .center .grid-wrapper .item-wrapper .content--wrapper .store--info .contact {
-              padding-right: calc(8px + (16 - 8) * ((100vw - 300px) / (1600 - 300)));
-              border-right: 1px solid rgba(255, 255, 255, 0.1); }
-            #menu-items-section .center .grid-wrapper .item-wrapper .content--wrapper .store--info .hours {
-              text-align: right;
-              padding: 0 calc(8px + (16 - 8) * ((100vw - 300px) / (1600 - 300))); }
+            align-items: flex-start;
+            justify-content: space-between; }
+            #pickup-section .center .location--wrapper .location--list .locations .store--info i {
+              margin-right: 6px; }
 
 #order-pickup-section {
   display: grid;
@@ -366,8 +307,8 @@
       margin-bottom: calc(24px + (48 - 24) * ((100vw - 300px) / (1600 - 300))); }
     #hero-section .center .wrapper .wrapper .cta--transparent {
       margin: 0; }
-  #menu-items-section .center .grid-wrapper {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+  #pickup-section .center .location--wrapper .location--list {
+    width: 100%; }
   #order-pickup-section {
     grid-template-columns: repeat(1, auto); }
     #order-pickup-section .center {
@@ -381,6 +322,8 @@
         height: 90px; } }
 
 @media only screen and (min-width: 500px) and (max-width: 728px) {
+  #pickup-section .center .location--wrapper .location--list {
+    width: 100%; }
   #order-pickup-section {
     grid-template-columns: repeat(1, auto); }
   #delivery-option-section .center .grid-wrapper {
@@ -391,5 +334,7 @@
 
 /* Smartphones */
 @media only screen and (min-width: 729px) and (max-width: 860px) {
+  #pickup-section .center .location--wrapper .location--list {
+    width: 70%; }
   #order-pickup-section {
     grid-template-columns: repeat(1, auto); } }
